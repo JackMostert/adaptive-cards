@@ -1,0 +1,6172 @@
+{
+  "SiteName": "jack",
+  "ExperienceVersions": {},
+  "Lists": [
+    {
+      "Title": "Users & Groups",
+      "Table": "principal",
+      "ListName": "Principals",
+      "ListNameSingular": "Principal",
+      "ShortName": "PRN",
+      "Namespace": "SYSTEM",
+      "ExcludeDefaultFields": true,
+      "SystemManaged": true,
+      "Searchable": false,
+      "TitleField": "display_name",
+      "TypeId": 1,
+      "Settings": {
+        "Icon": "Group",
+        "DisablePermissions": true,
+        "DisableHistory": false,
+        "InheritLinks": false,
+        "DisableAttachments": true,
+        "DisableUserCreation": true,
+        "Sealed": true
+      },
+      "Colours": {
+        "Primary": {
+          "Lighter": "#FFD9B3",
+          "Light": "#FFC386",
+          "Base": "#FFB162",
+          "Dark": "#F69C40",
+          "Darker": "#DA7815"
+        }
+      },
+      "Fields": [
+        {
+          "Title": "Object ID",
+          "ColumnName": "oid",
+          "FieldType": "GUID",
+          "Nullable": false,
+          "SystemManaged": false,
+          "Searchable": true
+        },
+        {
+          "Title": "Display Name",
+          "ColumnName": "display_name",
+          "FieldType": "Text",
+          "Nullable": false,
+          "SystemManaged": false,
+          "Searchable": true
+        },
+        {
+          "Title": "E-Mail Address",
+          "ColumnName": "email",
+          "FieldType": "Text",
+          "Nullable": true,
+          "SystemManaged": false
+        },
+        {
+          "Title": "User Principal Name",
+          "ColumnName": "upn",
+          "FieldType": "Text",
+          "Nullable": true,
+          "SystemManaged": false
+        },
+        {
+          "Title": "Department",
+          "ColumnName": "department",
+          "FieldType": "Text",
+          "Nullable": true,
+          "SystemManaged": false
+        },
+        {
+          "Title": "Given Names",
+          "ColumnName": "given_names",
+          "FieldType": "Text",
+          "Nullable": true,
+          "SystemManaged": false
+        },
+        {
+          "Title": "Surname",
+          "ColumnName": "surname",
+          "FieldType": "Text",
+          "Nullable": true,
+          "SystemManaged": false,
+          "Searchable": true
+        },
+        {
+          "Title": "Principal Type",
+          "ColumnName": "type",
+          "FieldType": "Choice",
+          "SystemManaged": false,
+          "Searchable": true,
+          "Settings": { "Choices": ["User", "Unified", "SecurityGroup"] }
+        },
+        {
+          "Title": "Status",
+          "ColumnName": "status",
+          "FieldType": "Choice",
+          "SystemManaged": false,
+          "Searchable": true,
+          "Settings": {
+            "Choices": [
+              { "Text": "Active", "AccentColour": "#018100" },
+              { "Text": "Inactive", "AccentColour": "#c51d1d" }
+            ]
+          }
+        }
+      ],
+      "Pipeline": { "Create": [], "Update": [] },
+      "Pages": {
+        "Principal Details": {
+          "id": "Principal Details",
+          "layouts": {
+            "Principals Details_GridLayout1": [
+              257,
+              3598,
+              257,
+              3592,
+              257,
+              3588,
+              257,
+              2062,
+              257,
+              2056,
+              257,
+              2052,
+              257,
+              1038,
+              257,
+              1032,
+              257,
+              1028
+            ],
+            "Form15549549597392": [
+              3588,
+              3598,
+              1033,
+              3592,
+              1033,
+              3588,
+              1033,
+              2062,
+              2052,
+              2056,
+              1033,
+              2052,
+              1033,
+              1038,
+              1033,
+              1032,
+              1032,
+              1028
+            ],
+            "TextField15549549781144": [
+              2049,
+              3598,
+              2049,
+              3592,
+              2049,
+              3588,
+              769,
+              2062,
+              1025,
+              2056,
+              2049,
+              2052,
+              2049,
+              1038,
+              2049,
+              1032,
+              2049,
+              1028
+            ],
+            "TextField15549549781175": [
+              2049,
+              3598,
+              2049,
+              3592,
+              2049,
+              3588,
+              66305,
+              2062,
+              66561,
+              2056,
+              67585,
+              2052,
+              2049,
+              1038,
+              2049,
+              1032,
+              2049,
+              1028
+            ],
+            "TextField15549549781196": [
+              2049,
+              3598,
+              2049,
+              3592,
+              2049,
+              3588,
+              50332417,
+              2062,
+              67109889,
+              2056,
+              198657,
+              2052,
+              2049,
+              1038,
+              2049,
+              1032,
+              2049,
+              1028
+            ],
+            "TextField15549549781227": [
+              2049,
+              3598,
+              2049,
+              3592,
+              2049,
+              3588,
+              131841,
+              2062,
+              132097,
+              2056,
+              264193,
+              2052,
+              2049,
+              1038,
+              2049,
+              1032,
+              2049,
+              1028
+            ],
+            "TextField15549549781258": [
+              2049,
+              3598,
+              2049,
+              3592,
+              2049,
+              3588,
+              50397953,
+              2062,
+              67175425,
+              2056,
+              329729,
+              2052,
+              2049,
+              1038,
+              2049,
+              1032,
+              2049,
+              1028
+            ],
+            "TextField15549549781289": [
+              2049,
+              3598,
+              2049,
+              3592,
+              2049,
+              3588,
+              50463489,
+              2062,
+              67240961,
+              2056,
+              395265,
+              2052,
+              2049,
+              1038,
+              2049,
+              1032,
+              2049,
+              1028
+            ],
+            "ChoiceField155495497813410": [
+              2049,
+              3598,
+              2049,
+              3592,
+              2049,
+              3588,
+              100663809,
+              2062,
+              67306497,
+              2056,
+              133121,
+              2052,
+              2049,
+              1038,
+              2049,
+              1032,
+              2049,
+              1028
+            ]
+          },
+          "body": {
+            "id": "Principals Details_GridLayout1",
+            "type": "GridLayout",
+            "children": [
+              {
+                "id": "Form15549549597392",
+                "type": "Form",
+                "overlayDisabled": false,
+                "children": [
+                  {
+                    "id": "TextField15549549781144",
+                    "type": "TextField",
+                    "overlayDisabled": false,
+                    "children": [],
+                    "attributes": { "config": {}, "field": "display_name" }
+                  },
+                  {
+                    "id": "TextField15549549781175",
+                    "type": "TextField",
+                    "overlayDisabled": false,
+                    "children": [],
+                    "attributes": { "config": {}, "field": "email" }
+                  },
+                  {
+                    "id": "TextField15549549781196",
+                    "type": "TextField",
+                    "overlayDisabled": false,
+                    "children": [],
+                    "attributes": { "config": {}, "field": "upn" }
+                  },
+                  {
+                    "id": "TextField15549549781227",
+                    "type": "TextField",
+                    "overlayDisabled": false,
+                    "children": [],
+                    "attributes": { "config": {}, "field": "department" }
+                  },
+                  {
+                    "id": "TextField15549549781258",
+                    "type": "TextField",
+                    "overlayDisabled": false,
+                    "children": [],
+                    "attributes": { "config": {}, "field": "given_names" }
+                  },
+                  {
+                    "id": "TextField15549549781289",
+                    "type": "TextField",
+                    "overlayDisabled": false,
+                    "children": [],
+                    "attributes": { "config": {}, "field": "surname" }
+                  },
+                  {
+                    "id": "ChoiceField155495497813410",
+                    "type": "ChoiceField",
+                    "overlayDisabled": false,
+                    "children": [],
+                    "attributes": { "config": {}, "field": "type" }
+                  }
+                ],
+                "attributes": { "config": { "title": "" } }
+              }
+            ],
+            "attributes": {}
+          },
+          "attributes": { "itemId": 2, "pageId": 0, "itemType": 1 }
+        }
+      },
+      "NewItemPage": "New User Account",
+      "systemAccount": {
+        "oid": "1db67290-5512-49fa-be8e-53d051c70137",
+        "id": 1,
+        "display_name": "Muze System",
+        "email": "system@muze.com.au",
+        "surname": "System",
+        "given_names": "Muze",
+        "upn": "system@muze.com.au",
+        "type": "Application",
+        "status": "Active"
+      },
+      "Items": [
+        {
+          "oid": "1db67290-5512-49fa-be8e-53d051c70137",
+          "id": 1,
+          "display_name": "Muze System",
+          "email": "system@muze.com.au",
+          "surname": "System",
+          "given_names": "Muze",
+          "upn": "system@muze.com.au",
+          "type": "Application",
+          "status": "Active"
+        },
+        {
+          "oid": "b2b9fd8c-2c03-4d14-904f-e0ccc72d9dbb",
+          "id": 2,
+          "display_name": "All Users and Groups",
+          "email": "everyone@muze.com.au",
+          "surname": "Users",
+          "given_names": "All",
+          "upn": "everyone@muze.com.au",
+          "type": "SecurityGroup",
+          "status": "Active"
+        }
+      ]
+    },
+    {
+      "Table": "note",
+      "ListName": "Notes",
+      "ListNameSingular": "Note",
+      "Namespace": "SYSTEM",
+      "SystemManaged": true,
+      "Searchable": false,
+      "NewItemPage": "Note Details",
+      "TypeId": 2,
+      "Pipeline": {
+        "Create": [
+          {
+            "name": "Assign Default Permissions",
+            "enabled": true,
+            "parameters": {}
+          },
+          { "name": "Process Linked Items", "enabled": true, "parameters": {} }
+        ],
+        "Update": [
+          { "name": "Process Linked Items", "enabled": true, "parameters": {} }
+        ]
+      },
+      "Settings": { "DisablePages": true, "Icon": "Comment" },
+      "Colours": {
+        "Primary": {
+          "Lighter": "#D0A7E8",
+          "Light": "#AF74D2",
+          "Base": "#914EB9",
+          "Dark": "#7931A4",
+          "Darker": "#641692"
+        }
+      },
+      "Fields": [
+        {
+          "Title": "Title",
+          "ColumnName": "title",
+          "FieldType": "Text",
+          "SystemManaged": false,
+          "Searchable": true
+        },
+        {
+          "Title": "Body",
+          "ColumnName": "body",
+          "FieldType": "Note",
+          "SystemManaged": false,
+          "Searchable": true
+        },
+        {
+          "Title": "Type",
+          "ColumnName": "type",
+          "FieldType": "Choice",
+          "SystemManaged": true,
+          "Searchable": true,
+          "Nullable": false,
+          "DefaultValue": "Comment",
+          "Settings": {
+            "Choices": [
+              { "Text": "Comment", "Value": "Comment" },
+              { "Text": "Mention", "Value": "Mention" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "Title": "Tasks",
+      "Table": "task",
+      "ListName": "Tasks",
+      "ListNameSingular": "Task",
+      "ShortName": "TSK",
+      "Namespace": "SYSTEM",
+      "ExcludeDefaultFields": false,
+      "SystemManaged": true,
+      "NewItemPage": "Task Details",
+      "Searchable": true,
+      "GroupId": "b2b9fd8c-2c03-4d14-904f-e0ccc72d9dbb",
+      "TitleField": "title",
+      "TypeId": 3,
+      "Settings": { "Icon": "TaskSolid" },
+      "Pipeline": {
+        "Create": [
+          {
+            "name": "Assign Default Permissions",
+            "enabled": true,
+            "parameters": {}
+          },
+          { "name": "Process Linked Items", "enabled": true, "parameters": {} },
+          { "name": "Parse Embedded Form", "enabled": true, "parameters": [] },
+          {
+            "name": "Notify Assigned on Creation",
+            "enabled": true,
+            "parameters": []
+          },
+          {
+            "name": "Create Attachments on item create",
+            "enabled": true,
+            "parameters": []
+          }
+        ],
+        "Update": [
+          { "name": "Process Linked Items", "enabled": true },
+          { "name": "Parse Embedded Form", "enabled": true, "parameters": [] },
+          {
+            "name": "Resend Notification for Assigned",
+            "enabled": true,
+            "parameters": []
+          }
+        ]
+      },
+      "Colours": {
+        "Primary": {
+          "Lighter": "#AABCE9",
+          "Light": "#7992D2",
+          "Base": "#5471BA",
+          "Dark": "#3857A5",
+          "Darker": "#1C3E92"
+        },
+        "Complimentary": {
+          "Base": "#AC8539",
+          "Light": "#D5B169",
+          "Lighter": "FFE2A8",
+          "Dark": "#835F16",
+          "Darker": "#583B00"
+        }
+      },
+      "Fields": [
+        {
+          "Title": "Title",
+          "ColumnName": "title",
+          "FieldType": "Text",
+          "SystemManaged": false,
+          "Searchable": true
+        },
+        {
+          "Title": "Start Date",
+          "ColumnName": "start_date",
+          "FieldType": "DateTime",
+          "SystemManaged": false,
+          "Nullable": true
+        },
+        {
+          "Title": "Due Date",
+          "ColumnName": "due_date",
+          "FieldType": "DateTime",
+          "SystemManaged": false,
+          "Nullable": true
+        },
+        {
+          "Title": "Description",
+          "ColumnName": "description",
+          "FieldType": "Note",
+          "SystemManaged": false,
+          "Nullable": true,
+          "Searchable": true
+        },
+        {
+          "Title": "Assigned To",
+          "ColumnName": "assigned_to_id",
+          "FieldType": "User",
+          "Nullable": true,
+          "Searchable": true
+        },
+        {
+          "Title": "Status",
+          "ColumnName": "status",
+          "FieldType": "Choice",
+          "SystemManaged": false,
+          "Nullable": false,
+          "DefaultValue": "Not started",
+          "Searchable": true,
+          "Settings": {
+            "Choices": [
+              { "Text": "Not started", "AccentColour": "#0088b5" },
+              { "Text": "In progress", "AccentColour": "#99cc00" },
+              { "Text": "Completed", "AccentColour": "#666666" },
+              { "Text": "Aborted", "AccentColour": "#999999" },
+              { "Text": "Failed", "AccentColour": "#871414" }
+            ]
+          }
+        },
+        {
+          "Title": "Embedded Form",
+          "ColumnName": "embedded_form",
+          "FieldType": "JSON",
+          "SystemManaged": true,
+          "Nullable": true,
+          "Hidden": true,
+          "DefaultValue": "[]"
+        },
+        {
+          "Title": "Dependencies",
+          "ColumnName": "dependencies",
+          "FieldType": "Subquery",
+          "SystemManaged": true,
+          "Nullable": true,
+          "AlwaysSelect": true,
+          "Hidden": true,
+          "Settings": {
+            "Query": "SELECT * FROM [dependency] where [dependency].[source_id] = [T].[id] FOR JSON PATH",
+            "DisplayAs": "JSON"
+          }
+        }
+      ],
+      "Pages": {
+        "Task Details": {
+          "id": "Task Details",
+          "layouts": {
+            "Tasks Details_GridLayout1": [
+              257,
+              3598,
+              257,
+              3592,
+              257,
+              3588,
+              257,
+              2062,
+              257,
+              2056,
+              257,
+              2052,
+              257,
+              1038,
+              257,
+              1032,
+              257,
+              1028
+            ],
+            "cde305ea-55e6-48ca-a483-55095f5b5bb0": [
+              2565,
+              3598,
+              1030,
+              3592,
+              1030,
+              3588,
+              1030,
+              2062,
+              1541,
+              2056,
+              1030,
+              2052,
+              1030,
+              1038,
+              1030,
+              1032,
+              1031,
+              1028
+            ],
+            "5a93463d-0e29-40b9-9ceb-06cbcd664c54": [
+              2049,
+              3598,
+              2049,
+              3592,
+              2049,
+              3588,
+              2049,
+              2062,
+              2049,
+              2056,
+              2049,
+              2052,
+              2049,
+              1038,
+              2049,
+              1032,
+              2049,
+              1028
+            ],
+            "5a64abe5-9396-4a3c-b3b6-0db14a0b1de0": [
+              2049,
+              3598,
+              2049,
+              3592,
+              2049,
+              3588,
+              197633,
+              2062,
+              66561,
+              2056,
+              67585,
+              2052,
+              2049,
+              1038,
+              2049,
+              1032,
+              2049,
+              1028
+            ],
+            "79c59b9a-bef9-44b6-90b8-4b03ea1cbe89": [
+              2049,
+              3598,
+              2049,
+              3592,
+              2049,
+              3588,
+              67306497,
+              2062,
+              67175425,
+              2056,
+              133121,
+              2052,
+              2049,
+              1038,
+              2049,
+              1032,
+              2049,
+              1028
+            ],
+            "34c934c7-b364-41e3-810c-57c7c708f551": [
+              2050,
+              3598,
+              2050,
+              3592,
+              2050,
+              3588,
+              67586,
+              2062,
+              133122,
+              2056,
+              198658,
+              2052,
+              2050,
+              1038,
+              2050,
+              1032,
+              2050,
+              1028
+            ],
+            "3f2f8526-59dd-46ef-8e9c-0009baf0a9cf": [
+              2049,
+              3598,
+              2049,
+              3592,
+              2049,
+              3588,
+              263169,
+              2062,
+              263169,
+              2056,
+              329729,
+              2052,
+              2049,
+              1038,
+              2049,
+              1032,
+              2049,
+              1028
+            ],
+            "e77dab8a-8c9b-4b34-b43a-e5c5b5b604fb": [
+              2049,
+              3598,
+              2049,
+              3592,
+              2049,
+              3588,
+              67372033,
+              2062,
+              67372033,
+              2056,
+              395265,
+              2052,
+              2049,
+              1038,
+              2049,
+              1032,
+              2049,
+              1028
+            ],
+            "991090fc-6f80-499e-8c56-4c2153a10e3e": [
+              168035332,
+              3598,
+              459268,
+              3592,
+              524804,
+              3588,
+              590340,
+              2062,
+              328707,
+              2056,
+              393732,
+              2052,
+              516,
+              1038,
+              516,
+              1032,
+              721923,
+              1028
+            ],
+            "81aac9a8-d15b-4741-91cd-a7c955713e33": [
+              167773188,
+              3598,
+              393473,
+              3592,
+              786689,
+              3588,
+              393473,
+              2062,
+              100663813,
+              2056,
+              655617,
+              2052,
+              257,
+              1038,
+              257,
+              1032,
+              459780,
+              1028
+            ],
+            "Embedded Files15549537164602": [
+              330243,
+              3598,
+              257,
+              3592,
+              257,
+              3588,
+              257,
+              2062,
+              67437571,
+              2056,
+              257,
+              2052,
+              257,
+              1038,
+              257,
+              1032,
+              918531,
+              1028
+            ]
+          },
+          "body": {
+            "id": "Tasks Details_GridLayout1",
+            "type": "GridLayout",
+            "children": [
+              {
+                "id": "cde305ea-55e6-48ca-a483-55095f5b5bb0",
+                "type": "Form",
+                "overlayDisabled": false,
+                "children": [
+                  {
+                    "id": "5a93463d-0e29-40b9-9ceb-06cbcd664c54",
+                    "type": "TextField",
+                    "overlayDisabled": false,
+                    "children": [],
+                    "attributes": { "config": {}, "field": "title" }
+                  },
+                  {
+                    "id": "5a64abe5-9396-4a3c-b3b6-0db14a0b1de0",
+                    "type": "DateField",
+                    "overlayDisabled": false,
+                    "children": [],
+                    "attributes": { "config": {}, "field": "start_date" }
+                  },
+                  {
+                    "id": "79c59b9a-bef9-44b6-90b8-4b03ea1cbe89",
+                    "type": "DateField",
+                    "overlayDisabled": false,
+                    "children": [],
+                    "attributes": { "config": {}, "field": "due_date" }
+                  },
+                  {
+                    "id": "34c934c7-b364-41e3-810c-57c7c708f551",
+                    "type": "NoteField",
+                    "overlayDisabled": false,
+                    "children": [],
+                    "attributes": { "config": {}, "field": "description" }
+                  },
+                  {
+                    "id": "3f2f8526-59dd-46ef-8e9c-0009baf0a9cf",
+                    "type": "ChoiceField",
+                    "overlayDisabled": false,
+                    "children": [],
+                    "attributes": { "config": {}, "field": "status" }
+                  },
+                  {
+                    "id": "e77dab8a-8c9b-4b34-b43a-e5c5b5b604fb",
+                    "type": "UserField",
+                    "overlayDisabled": false,
+                    "children": [],
+                    "attributes": { "config": {}, "field": "assigned_to_id" }
+                  }
+                ],
+                "attributes": { "config": { "title": "Task Details" } }
+              },
+              {
+                "id": "991090fc-6f80-499e-8c56-4c2153a10e3e",
+                "type": "EmbeddedForm",
+                "overlayDisabled": false,
+                "children": [],
+                "attributes": { "config": {} }
+              },
+              {
+                "id": "81aac9a8-d15b-4741-91cd-a7c955713e33",
+                "type": "LinkedItemsList",
+                "overlayDisabled": false,
+                "children": [],
+                "attributes": { "config": { "excludeTypes": ["Notes"] } }
+              },
+              {
+                "id": "Embedded Files15549537164602",
+                "type": "Embedded Files",
+                "overlayDisabled": false,
+                "children": [],
+                "attributes": { "config": {} }
+              }
+            ],
+            "attributes": {}
+          },
+          "attributes": { "itemId": 2, "pageId": 0, "itemType": 1 }
+        }
+      }
+    },
+    {
+      "ListName": "Dependencies",
+      "ExcludeDefaultFields": true,
+      "ListNameSingular": "Dependency",
+      "NewItemPage": "Dependency Details",
+      "Settings": {
+        "DisableAttachments": true,
+        "DisablePages": true,
+        "DisablePermissions": true,
+        "DisableUniversalLinks": true,
+        "DisableEntityFolder": true,
+        "DisableSoftDelete": true,
+        "Sealed": true
+      },
+      "Searchable": false,
+      "Table": "dependency",
+      "SystemManaged": true,
+      "Fields": [
+        {
+          "Title": "Source",
+          "ColumnName": "source_id",
+          "FieldType": "Lookup",
+          "SystemManaged": false,
+          "Updateable": true,
+          "Settings": { "LookupField": "title", "LookupList": "Tasks" }
+        },
+        {
+          "Title": "Target",
+          "ColumnName": "target_id",
+          "FieldType": "Lookup",
+          "SystemManaged": false,
+          "Updateable": true,
+          "Settings": { "LookupField": "title", "LookupList": "Tasks" }
+        },
+        {
+          "Title": "Gap",
+          "ColumnName": "gap",
+          "FieldType": "Number",
+          "Nullable": true,
+          "SystemManaged": false
+        },
+        {
+          "Title": "Type",
+          "ColumnName": "type",
+          "FieldType": "Number",
+          "SystemManaged": false,
+          "Nullable": false,
+          "DefaultValue": "0"
+        }
+      ],
+      "Pipeline": { "Create": [], "Update": [] },
+      "TypeId": 5
+    },
+    {
+      "ListName": "Process Diagrams",
+      "ListNameSingular": "Process Diagram",
+      "Searchable": false,
+      "Settings": { "Icon": "Flow", "Sealed": true },
+      "Colours": {
+        "Primary": {
+          "Base": "#6A1492",
+          "Dark": "#530A75",
+          "Darker": "#3E045A",
+          "Light": "#7C319F",
+          "Lighter": "#9250B1"
+        }
+      },
+      "Fields": [
+        { "Title": "Title", "ColumnName": "title", "FieldType": "Text" },
+        {
+          "Title": "Diagram Data",
+          "ColumnName": "diagram_data",
+          "FieldType": "XML",
+          "Searchable": false,
+          "Settings": { "Uploadable": true, "Hidden": true }
+        },
+        {
+          "Title": "Process Owner",
+          "ColumnName": "process_owner_id",
+          "FieldType": "User"
+        },
+        {
+          "Title": "Stage",
+          "ColumnName": "stage",
+          "FieldType": "Choice",
+          "Settings": {
+            "DefaultValue": "Draft",
+            "Choices": [
+              { "Text": "Draft", "AccentColour": "purple" },
+              { "Text": "Active", "AccentColour": "green" },
+              { "Text": "Archive", "AccentColour": "gray" }
+            ]
+          }
+        }
+      ],
+      "SystemManaged": true,
+      "Table": "process_diagram",
+      "NewItemPage": "Process Diagram Details",
+      "TitleField": "title",
+      "Pages": {
+        "Process Diagram": {
+          "layouts": {
+            "Process Diagrams_TabStrip1": [
+              257,
+              3598,
+              257,
+              3592,
+              257,
+              3588,
+              257,
+              2062,
+              257,
+              2056,
+              257,
+              2052,
+              257,
+              1038,
+              257,
+              1032,
+              257,
+              1028
+            ]
+          },
+          "body": {
+            "id": "Process Diagrams_TabStrip1",
+            "type": "TabStrip",
+            "children": [],
+            "attributes": {
+              "config": {
+                "jumbotron": true,
+                "title": "View Process Diagrams",
+                "tabs": [
+                  {
+                    "title": "Details",
+                    "page": "Process Diagram Details",
+                    "hidden": false,
+                    "attributes": {
+                      "itemId": "{itemId}",
+                      "itemType": "Process Diagrams",
+                      "linkItemType": "Process Diagrams",
+                      "linkItemId": "{itemId}"
+                    }
+                  },
+                  {
+                    "title": "Activity",
+                    "page": "Process Diagram Activity",
+                    "hidden": false,
+                    "attributes": {
+                      "itemId": "{itemId}",
+                      "itemType": "Process Diagrams",
+                      "linkItemType": "Process Diagrams",
+                      "linkItemId": "{itemId}"
+                    }
+                  },
+                  {
+                    "title": "Files",
+                    "page": "Process Diagrams Files",
+                    "hidden": true,
+                    "attributes": {
+                      "itemId": "{itemId}",
+                      "linkItemType": "Process Diagrams",
+                      "linkItemId": "{itemId}",
+                      "itemType": "Process Diagrams"
+                    }
+                  },
+                  {
+                    "title": "Process Runs",
+                    "hidden": false,
+                    "attributes": {
+                      "linkItemType": "Process Diagrams",
+                      "linkItemId": "{itemId}",
+                      "itemType": "Process Runs"
+                    },
+                    "page": "Process Runs"
+                  }
+                ]
+              }
+            }
+          },
+          "id": "Process Diagram",
+          "jumbotronEnabled": true,
+          "attributes": { "pageId": 0, "itemType": 1, "itemId": 2 }
+        },
+        "Process Diagrams": {
+          "layouts": {
+            "DataTable1": [
+              3593,
+              3598,
+              2057,
+              2056,
+              1029,
+              1028,
+              257,
+              3592,
+              257,
+              3588,
+              257,
+              2062,
+              257,
+              2052,
+              257,
+              1038,
+              257,
+              1032
+            ],
+            "Horizontal Layout1": [
+              257,
+              3598,
+              257,
+              3592,
+              257,
+              3588,
+              257,
+              2062,
+              257,
+              2056,
+              257,
+              2052,
+              257,
+              1038,
+              257,
+              1032,
+              257,
+              1028
+            ]
+          },
+          "body": {
+            "id": "Horizontal Layout1",
+            "type": "Horizontal Layout",
+            "children": [
+              {
+                "id": "DataTable1",
+                "type": "DataTable",
+                "children": [],
+                "attributes": { "config": { "list": "Process Diagrams" } }
+              }
+            ],
+            "attributes": {
+              "config": { "children": [{ "style": {} }, { "w": 1 }] }
+            }
+          },
+          "id": "Process Diagrams",
+          "jumbotronEnabled": true,
+          "attributes": {
+            "pageId": 0,
+            "itemType": 0,
+            "linkItemId": 1,
+            "linkItemType": 2
+          }
+        },
+        "Process Diagram Details": {
+          "layouts": {
+            "Flex Layout15701645628922": [
+              257,
+              3598,
+              257,
+              3592,
+              257,
+              3588,
+              257,
+              2062,
+              257,
+              2056,
+              257,
+              2052,
+              257,
+              1038,
+              257,
+              1032,
+              257,
+              1028
+            ],
+            "Form15701645727224": [
+              1030,
+              3598,
+              1030,
+              3592,
+              1030,
+              3588,
+              1030,
+              2062,
+              1030,
+              2056,
+              1030,
+              2052,
+              1030,
+              1038,
+              1030,
+              1032,
+              1030,
+              1028
+            ],
+            "ProcessDiagram15701645764926": [
+              2056,
+              3598,
+              2056,
+              3592,
+              2056,
+              3588,
+              2056,
+              2062,
+              2056,
+              2056,
+              2056,
+              2052,
+              2056,
+              1038,
+              2056,
+              1032,
+              2056,
+              1028
+            ],
+            "TextField15701680512451": [
+              2049,
+              3598,
+              2049,
+              3592,
+              2049,
+              3588,
+              2049,
+              2062,
+              2049,
+              2056,
+              2049,
+              2052,
+              2049,
+              1038,
+              2049,
+              1032,
+              2049,
+              1028
+            ]
+          },
+          "body": {
+            "id": "Flex Layout15701645628922",
+            "type": "Flex Layout",
+            "overlayDisabled": false,
+            "children": [
+              {
+                "id": "Form15701645727224",
+                "type": "Form",
+                "overlayDisabled": false,
+                "children": [
+                  {
+                    "id": "TextField15701680512451",
+                    "type": "TextField",
+                    "overlayDisabled": false,
+                    "children": [],
+                    "attributes": { "config": {}, "field": "title" }
+                  }
+                ],
+                "attributes": { "config": { "title": "" } }
+              },
+              {
+                "id": "ProcessDiagram15701645764926",
+                "type": "ProcessDiagram",
+                "overlayDisabled": false,
+                "children": [],
+                "attributes": { "config": {} }
+              }
+            ],
+            "attributes": {
+              "direction": "vertical",
+              "Form15701645727224": { "componentSize": "fixed" },
+              "ProcessDiagram15701645764926": { "componentSize": "" }
+            }
+          },
+          "id": "Process Diagram Details",
+          "jumbotronEnabled": true,
+          "attributes": { "itemId": 2, "pageId": 0, "itemType": 1 }
+        }
+      },
+      "SQLViews": {},
+      "DataSources": [
+        {
+          "Title": "Signal Events",
+          "Columns": [
+            { "ColumnName": "id" },
+            { "ColumnName": "element_id" },
+            { "ColumnName": "list" },
+            { "ColumnName": "lifecycle" },
+            { "ColumnName": "conditions" }
+          ],
+          "FilterExpression": null,
+          "Editable": false,
+          "Deletable": false,
+          "Transient": true
+        },
+        {
+          "Title": "All",
+          "Columns": [
+            { "ColumnName": "author_id" },
+            { "ColumnName": "created" },
+            { "ColumnName": "editor_id" },
+            { "ColumnName": "modified" },
+            { "ColumnName": "parent_id" },
+            { "ColumnName": "sys_external_id" },
+            { "ColumnName": "entity_type" },
+            { "ColumnName": "entity_id" },
+            { "ColumnName": "step_id" },
+            { "ColumnName": "process_diagram_id" },
+            { "ColumnName": "process_run_id" },
+            { "ColumnName": "process_element_id" }
+          ],
+          "FilterExpression": null,
+          "SortBy": "id",
+          "SortDirection": "desc",
+          "Editable": true,
+          "Deletable": false
+        }
+      ],
+      "TypeId": 6
+    },
+    {
+      "ListName": "Process Runs",
+      "ListNameSingular": "Process Run",
+      "TitleField": "title",
+      "Colours": {
+        "Primary": {
+          "Base": "#DA6E15",
+          "Dark": "#AF5307",
+          "Darker": "#873D00",
+          "Light": "#ED8F41",
+          "Lighter": "#FFAF6D"
+        }
+      },
+      "Fields": [
+        { "ColumnName": "title", "Title": "Title", "FieldType": "Text" },
+        {
+          "ColumnName": "process_diagram_id",
+          "Title": "Process Diagram",
+          "FieldType": "Lookup",
+          "Settings": {
+            "LookupList": "Process Diagrams",
+            "LookupField": "title"
+          }
+        },
+        {
+          "ColumnName": "ledger_data",
+          "Title": "Ledger Data",
+          "FieldType": "JSON"
+        },
+        {
+          "ColumnName": "is_complete",
+          "Title": "Is Complete",
+          "FieldType": "Subquery",
+          "Settings": {
+            "Query": "json_value(ledger_data, '$.complete')",
+            "DisplayAs": "Boolean"
+          }
+        },
+        {
+          "ColumnName": "erroring_element",
+          "Title": "Erroring Element",
+          "FieldType": "Subquery",
+          "Settings": {
+            "Query": "json_value(ledger_data, '$.errors[0].elementId')"
+          }
+        },
+        {
+          "ColumnName": "latest_error_message",
+          "Title": "Error Message",
+          "FieldType": "Subquery",
+          "Settings": {
+            "Query": "json_value(ledger_data, '$.errors[0].message')"
+          }
+        },
+        {
+          "ColumnName": "diagram_data",
+          "Title": "Diagram Data",
+          "FieldType": "Subquery",
+          "Settings": {
+            "Query": "\n            select top 1 cast(process_diagram.diagram_data as NVARCHAR(MAX)) as diagram_data\n            from process_diagram where process_diagram.id = T.process_diagram_id\n          ",
+            "DisplayAs": "Text"
+          }
+        },
+        {
+          "ColumnName": "current_element",
+          "Title": "Current Element",
+          "FieldType": "Subquery",
+          "Settings": {
+            "Query": "(select top 1 A.elementId from openjson(ledger_data, '$.stack') with (elementId varchar(128), state nvarchar(max) as json) A where json_value(A.state, '$.completed') = 'false' )",
+            "DisplayAs": "Text"
+          }
+        }
+      ],
+      "NewItemPage": "",
+      "Searchable": false,
+      "SystemManaged": true,
+      "Settings": {
+        "DisableAttachments": true,
+        "DisableEntityFolder": true,
+        "DisableUserCreation": true,
+        "Sealed": true,
+        "Icon": "Processing"
+      },
+      "Table": "process_run",
+      "Pages": {
+        "Process Run Details": {
+          "layouts": {
+            "ProcessDiagram15700773291852": [
+              2056,
+              3598,
+              2056,
+              3592,
+              2056,
+              3588,
+              2056,
+              2062,
+              2056,
+              2056,
+              2056,
+              2052,
+              2056,
+              1038,
+              2056,
+              1032,
+              2056,
+              1028
+            ]
+          },
+          "body": {
+            "id": "ProcessDiagram15700773291852",
+            "type": "ProcessDiagram",
+            "overlayDisabled": false,
+            "children": [],
+            "attributes": { "config": {} }
+          },
+          "id": "Process Run Details",
+          "jumbotronEnabled": true,
+          "attributes": { "itemId": 2, "pageId": 0, "itemType": 1 }
+        },
+        "Process Run": {
+          "layouts": {
+            "Process Runs_TabStrip1": [
+              257,
+              3598,
+              257,
+              3592,
+              257,
+              3588,
+              257,
+              2062,
+              257,
+              2056,
+              257,
+              2052,
+              257,
+              1038,
+              257,
+              1032,
+              257,
+              1028
+            ]
+          },
+          "body": {
+            "id": "Process Runs_TabStrip1",
+            "type": "TabStrip",
+            "children": [],
+            "attributes": {
+              "config": {
+                "jumbotron": true,
+                "title": "View Process Runs",
+                "tabs": [
+                  {
+                    "title": "Details",
+                    "page": "Process Run Details",
+                    "hidden": false,
+                    "attributes": {
+                      "itemId": "{itemId}",
+                      "itemType": "Process Runs",
+                      "linkItemType": "Process Runs",
+                      "linkItemId": "{itemId}"
+                    }
+                  },
+                  {
+                    "title": "Ledger",
+                    "page": "Process Run Ledger",
+                    "hidden": false,
+                    "attributes": {
+                      "linkItemType": "Process Runs",
+                      "linkItemId": "{itemId}",
+                      "itemType": "Process Runs"
+                    }
+                  },
+                  {
+                    "title": "Activity",
+                    "page": "Process Run Activity",
+                    "hidden": false,
+                    "attributes": {
+                      "itemId": "{itemId}",
+                      "itemType": "Process Runs",
+                      "linkItemType": "Process Runs",
+                      "linkItemId": "{itemId}"
+                    }
+                  },
+                  {
+                    "title": "Files",
+                    "page": "Process Runs Files",
+                    "hidden": true,
+                    "attributes": {
+                      "itemId": "{itemId}",
+                      "linkItemType": "Process Runs",
+                      "linkItemId": "{itemId}",
+                      "itemType": "Process Runs"
+                    }
+                  },
+                  {
+                    "title": "Tasks",
+                    "page": "Tasks",
+                    "hidden": false,
+                    "attributes": {
+                      "linkItemType": "Process Runs",
+                      "linkItemId": "{itemId}",
+                      "itemType": "Tasks"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "id": "Process Run",
+          "jumbotronEnabled": true,
+          "attributes": { "pageId": 0, "itemType": 1, "itemId": 2 }
+        },
+        "Process Runs": {
+          "layouts": {
+            "DataTable1": [
+              3593,
+              3598,
+              2057,
+              2056,
+              1029,
+              1028,
+              257,
+              3592,
+              257,
+              3588,
+              257,
+              2062,
+              257,
+              2052,
+              257,
+              1038,
+              257,
+              1032
+            ],
+            "Horizontal Layout1": [
+              257,
+              3598,
+              257,
+              3592,
+              257,
+              3588,
+              257,
+              2062,
+              257,
+              2056,
+              257,
+              2052,
+              257,
+              1038,
+              257,
+              1032,
+              257,
+              1028
+            ]
+          },
+          "body": {
+            "id": "Horizontal Layout1",
+            "type": "Horizontal Layout",
+            "children": [
+              {
+                "id": "DataTable1",
+                "type": "DataTable",
+                "children": [],
+                "attributes": { "config": { "list": "Process Runs" } }
+              }
+            ],
+            "attributes": {
+              "config": { "children": [{ "style": {} }, { "w": 1 }] }
+            }
+          },
+          "id": "Process Runs",
+          "jumbotronEnabled": true,
+          "attributes": {
+            "pageId": 0,
+            "itemType": 0,
+            "linkItemId": 1,
+            "linkItemType": 2
+          }
+        },
+        "Process Run Ledger": {
+          "list": "Process Runs",
+          "layouts": {
+            "Form15700848471065": [
+              1030,
+              3598,
+              1030,
+              3592,
+              1030,
+              3588,
+              1030,
+              2062,
+              1030,
+              2056,
+              1030,
+              2052,
+              1030,
+              1038,
+              1030,
+              1032,
+              1030,
+              1028
+            ],
+            "DataField15700848517416": [
+              2049,
+              3598,
+              2049,
+              3592,
+              2049,
+              3588,
+              2058,
+              2062,
+              2049,
+              2056,
+              2049,
+              2052,
+              2049,
+              1038,
+              2049,
+              1032,
+              2049,
+              1028
+            ]
+          },
+          "body": {
+            "id": "Form15700848471065",
+            "type": "Form",
+            "overlayDisabled": false,
+            "children": [
+              {
+                "id": "DataField15700848517416",
+                "type": "DataField",
+                "overlayDisabled": false,
+                "children": [],
+                "attributes": { "config": {}, "field": "ledger_data" }
+              }
+            ],
+            "attributes": { "config": { "title": "Process Ledger" } }
+          },
+          "id": "Process Run Ledger",
+          "jumbotronEnabled": true,
+          "attributes": { "pageId": 0, "itemType": 1, "itemId": 2 }
+        }
+      },
+      "TypeId": 7
+    },
+    {
+      "ListName": "Process Artifacts",
+      "ListNameSingular": "Process Artifact",
+      "Fields": [
+        {
+          "Title": "Entity Type",
+          "ColumnName": "entity_type",
+          "FieldType": "Text"
+        },
+        { "Title": "Entity", "ColumnName": "entity_id", "FieldType": "Text" },
+        { "Title": "Step", "ColumnName": "step_id", "FieldType": "GUID" },
+        {
+          "Title": "Process Diagram",
+          "ColumnName": "process_diagram_id",
+          "FieldType": "Lookup",
+          "Settings": {
+            "LookupList": "Process Diagrams",
+            "LookupField": "title"
+          }
+        },
+        {
+          "Title": "Process Run",
+          "ColumnName": "process_run_id",
+          "FieldType": "Lookup",
+          "Settings": { "LookupList": "Process Runs", "LookupField": "title" }
+        },
+        {
+          "Title": "Process Element",
+          "ColumnName": "process_element_id",
+          "FieldType": "Text"
+        }
+      ],
+      "Pipeline": { "Create": [], "Update": [] },
+      "NewItemPage": "",
+      "Searchable": false,
+      "SystemManaged": true,
+      "Table": "process_artifact",
+      "Settings": {
+        "Icon": "Checkbox",
+        "Sealed": true,
+        "DisableUserCreation": true,
+        "DisablePermissions": true
+      },
+      "TypeId": 8
+    },
+    {
+      "ListName": "Database Migrations",
+      "ListNameSingular": "Database Migration",
+      "Fields": [
+        { "Title": "Title", "ColumnName": "title", "FieldType": "Text" },
+        {
+          "Title": "Description",
+          "ColumnName": "description",
+          "FieldType": "Note"
+        },
+        { "Title": "Site", "ColumnName": "site", "FieldType": "JSON" },
+        {
+          "Title": "Status",
+          "ColumnName": "status",
+          "FieldType": "Choice",
+          "Settings": {
+            "Choices": [
+              {
+                "Text": "Applied",
+                "Value": "Applied",
+                "AccentColour": "#20af20"
+              },
+              { "Text": "Failed", "Value": "Failed", "AccentColour": "#b02025" }
+            ]
+          }
+        }
+      ],
+      "TypeId": -2,
+      "NewItemPage": "",
+      "Searchable": false,
+      "SystemManaged": true,
+      "Table": "sys_database_migration",
+      "TitleField": "title",
+      "Settings": {
+        "Abstract": true,
+        "Sealed": true,
+        "CreateFolder": false,
+        "DisableUserCreation": true,
+        "DisablePermissions": true,
+        "Icon": "Database"
+      },
+      "DataSources": [
+        {
+          "Title": "All",
+          "Columns": [
+            { "ColumnName": "created" },
+            { "ColumnName": "author_id", "MaxWidth": 303 },
+            { "ColumnName": "title", "MaxWidth": 556 },
+            { "ColumnName": "status", "MaxWidth": 214 }
+          ],
+          "FilterExpression": null,
+          "SortBy": "id",
+          "SortDirection": "desc",
+          "Editable": true,
+          "Deletable": true,
+          "IsVisible": true
+        }
+      ],
+      "Pipeline": { "Create": [], "Update": [] },
+      "Pages": {
+        "Database Migration": {
+          "layouts": {
+            "Database Migrations_TabStrip1": [
+              257,
+              3598,
+              257,
+              3592,
+              257,
+              3588,
+              257,
+              2062,
+              257,
+              2056,
+              257,
+              2052,
+              257,
+              1038,
+              257,
+              1032,
+              257,
+              1028
+            ]
+          },
+          "body": {
+            "id": "Database Migrations_TabStrip1",
+            "type": "TabStrip",
+            "children": [],
+            "attributes": {
+              "config": {
+                "jumbotron": true,
+                "title": "View Database Migrations",
+                "tabs": [
+                  {
+                    "title": "Details",
+                    "page": "Database Migration Details",
+                    "hidden": false,
+                    "attributes": {
+                      "itemId": "{itemId}",
+                      "itemType": "Database Migrations",
+                      "linkItemType": "Database Migrations",
+                      "linkItemId": "{itemId}"
+                    }
+                  },
+                  {
+                    "title": "Activity",
+                    "page": "Database Migration Activity",
+                    "hidden": false,
+                    "attributes": {
+                      "itemId": "{itemId}",
+                      "itemType": "Database Migrations",
+                      "linkItemType": "Database Migrations",
+                      "linkItemId": "{itemId}"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "id": "Database Migration",
+          "jumbotronEnabled": true,
+          "attributes": { "pageId": 0, "itemType": 1, "itemId": 2 }
+        },
+        "Database Migration Details": {
+          "layouts": {
+            "Database Migration Details_GridLayout1": [
+              257,
+              3598,
+              257,
+              3592,
+              257,
+              3588,
+              257,
+              2062,
+              257,
+              2056,
+              257,
+              2052,
+              257,
+              1038,
+              257,
+              1032,
+              257,
+              1028
+            ],
+            "Form15571989942214": [
+              1798,
+              3598,
+              1030,
+              3592,
+              1030,
+              3588,
+              1030,
+              2062,
+              2055,
+              2056,
+              1030,
+              2052,
+              1030,
+              1038,
+              1030,
+              1032,
+              1030,
+              1028
+            ],
+            "ChoiceField15767124255981": [
+              2049,
+              3598,
+              2049,
+              3592,
+              2049,
+              3588,
+              67585,
+              2062,
+              67585,
+              2056,
+              67585,
+              2052,
+              2049,
+              1038,
+              2049,
+              1032,
+              2049,
+              1028
+            ],
+            "TextField15767124256012": [
+              2049,
+              3598,
+              2049,
+              3592,
+              2049,
+              3588,
+              2049,
+              2062,
+              2049,
+              2056,
+              2049,
+              2052,
+              2049,
+              1038,
+              2049,
+              1032,
+              2049,
+              1028
+            ]
+          },
+          "body": {
+            "id": "Database Migration Details_GridLayout1",
+            "type": "GridLayout",
+            "children": [
+              {
+                "id": "Form15571989942214",
+                "type": "Form",
+                "overlayDisabled": false,
+                "children": [
+                  {
+                    "id": "ChoiceField15767124255981",
+                    "type": "ChoiceField",
+                    "overlayDisabled": false,
+                    "children": [],
+                    "attributes": { "config": {}, "field": "status" }
+                  },
+                  {
+                    "id": "TextField15767124256012",
+                    "type": "TextField",
+                    "overlayDisabled": false,
+                    "children": [],
+                    "attributes": { "config": {}, "field": "title" }
+                  }
+                ],
+                "attributes": { "config": { "title": "" } }
+              }
+            ],
+            "attributes": { "config": { "innerScroll": false } }
+          },
+          "id": "Database Migration Details",
+          "jumbotronEnabled": true,
+          "attributes": { "itemId": 2, "pageId": 0, "itemType": 1 }
+        }
+      }
+    },
+    {
+      "ListName": "Test Forms",
+      "ListNameSingular": "Test Form",
+      "NewItemPage": "Test Form Details",
+      "Fields": [
+        {
+          "Title": "title",
+          "ColumnName": "title",
+          "SystemManaged": false,
+          "FieldType": "Text",
+          "Nullable": true,
+          "Searchable": true,
+          "Settings": { "Choices": [], "LookupBindings": [] }
+        },
+        {
+          "Title": "Name please",
+          "ColumnName": "name_please",
+          "SystemManaged": false,
+          "FieldType": "Text",
+          "Nullable": true,
+          "DefaultValue": "Bob",
+          "Searchable": true,
+          "Settings": { "Choices": [], "LookupBindings": [] }
+        },
+        {
+          "Title": "Date Made",
+          "ColumnName": "date_made",
+          "SystemManaged": false,
+          "FieldType": "DateTime",
+          "Nullable": true,
+          "Searchable": true,
+          "Settings": { "Choices": [], "LookupBindings": [] }
+        },
+        {
+          "Title": "Email Title",
+          "ColumnName": "email_title",
+          "SystemManaged": false,
+          "FieldType": "Email",
+          "Nullable": true,
+          "Searchable": true,
+          "Settings": { "Choices": [], "LookupBindings": [] }
+        },
+        {
+          "Title": "Choice Title",
+          "ColumnName": "choice_title",
+          "SystemManaged": false,
+          "FieldType": "Choice",
+          "Nullable": true,
+          "DefaultValue": "op 1",
+          "Searchable": true,
+          "Settings": {
+            "Choices": [
+              { "Text": "op 1", "AccentColour": "#7798b8" },
+              { "Text": "op2", "AccentColour": "#7798b8" },
+              { "Text": "op5", "AccentColour": "#7798b8" },
+              { "Text": "and then  6", "AccentColour": "#7798b8" }
+            ],
+            "LookupBindings": []
+          }
+        }
+      ],
+      "Table": "test_form",
+      "Searchable": true,
+      "Settings": {},
+      "Colours": {
+        "Primary": {
+          "Light": "#999",
+          "Lighter": "#b9b9b9",
+          "Base": "#6e6e6e",
+          "Dark": "#3d3d3d",
+          "Darker": "#0a0a0a"
+        },
+        "Complimentary": {
+          "Light": "#999",
+          "Lighter": "#b9b9b9",
+          "Base": "#6e6e6e",
+          "Dark": "#3d3d3d",
+          "Darker": "#0a0a0a"
+        }
+      },
+      "TitleField": "title",
+      "InheritLinks": [],
+      "TypeId": 14
+    },
+    {
+      "ListName": "All Fields",
+      "ListNameSingular": "All Field",
+      "NewItemPage": "All Field Details",
+      "Fields": [
+        {
+          "Title": "Text Field",
+          "ColumnName": "text_field",
+          "SystemManaged": false,
+          "FieldType": "Text",
+          "Nullable": true,
+          "Searchable": true,
+          "Settings": { "Choices": [], "LookupBindings": [] }
+        },
+        {
+          "Title": "Email Field",
+          "ColumnName": "email_field",
+          "SystemManaged": false,
+          "FieldType": "Email",
+          "Nullable": true,
+          "Searchable": true,
+          "Settings": { "Choices": [], "LookupBindings": [] }
+        },
+        {
+          "Title": "Multiple Lines Of Text Field",
+          "ColumnName": "multiple_lines_of_text_field",
+          "SystemManaged": false,
+          "FieldType": "Note",
+          "Nullable": true,
+          "Searchable": true,
+          "Settings": { "Choices": [], "LookupBindings": [] }
+        },
+        {
+          "Title": "Date And Time Field",
+          "ColumnName": "date_and_time_field",
+          "SystemManaged": false,
+          "FieldType": "DateTime",
+          "Nullable": true,
+          "Searchable": true,
+          "Settings": { "Choices": [], "LookupBindings": [] }
+        },
+        {
+          "Title": "Choice Field",
+          "ColumnName": "choice_field",
+          "SystemManaged": false,
+          "FieldType": "Choice",
+          "Nullable": true,
+          "DefaultValue": "Option 1",
+          "Searchable": true,
+          "Settings": {
+            "Choices": [
+              { "Text": "Option 1", "AccentColour": "#7798b8" },
+              { "Text": "Option 2", "AccentColour": "#7798b8" },
+              { "Text": "Option 3", "AccentColour": "#7798b8" },
+              { "Text": "Option 4", "AccentColour": "#7798b8" },
+              { "Text": "Option 5", "AccentColour": "#7798b8" }
+            ],
+            "LookupBindings": []
+          }
+        },
+        {
+          "Title": "Lookup Field",
+          "ColumnName": "lookup_field_id",
+          "SystemManaged": false,
+          "FieldType": "Lookup",
+          "Nullable": true,
+          "DefaultValue": {
+            "selectedTitle": "My title for the task field",
+            "selectedKey": 318
+          },
+          "Searchable": true,
+          "Settings": {
+            "Choices": [],
+            "LookupField": "title",
+            "LookupList": "Tasks",
+            "LookupBindings": []
+          }
+        },
+        {
+          "Title": "Boolean Field",
+          "ColumnName": "boolean_field",
+          "SystemManaged": false,
+          "FieldType": "Boolean",
+          "Nullable": true,
+          "Searchable": true,
+          "Settings": { "Choices": [], "LookupBindings": [] }
+        },
+        {
+          "Title": "Number Field",
+          "ColumnName": "number_field",
+          "SystemManaged": false,
+          "FieldType": "Number",
+          "Nullable": true,
+          "Searchable": true,
+          "Settings": { "Choices": [], "LookupBindings": [] }
+        },
+        {
+          "Title": "Percentage Field",
+          "ColumnName": "percentage_field",
+          "SystemManaged": false,
+          "FieldType": "Percentage",
+          "Nullable": true,
+          "Searchable": true,
+          "Settings": { "Choices": [], "LookupBindings": [] }
+        },
+        {
+          "Title": "Currency Field",
+          "ColumnName": "currency_field",
+          "SystemManaged": false,
+          "FieldType": "Currency",
+          "Nullable": true,
+          "Searchable": true,
+          "Settings": {
+            "Choices": [],
+            "CurrencyType": "AU$",
+            "LookupBindings": []
+          }
+        },
+        {
+          "Title": "User Field",
+          "ColumnName": "user_field_id",
+          "SystemManaged": false,
+          "FieldType": "User",
+          "Nullable": true,
+          "DefaultValue": 1,
+          "Searchable": true,
+          "Settings": { "Choices": [], "LookupBindings": [] }
+        },
+        {
+          "Title": "Whole Number Field",
+          "ColumnName": "whole_number_field",
+          "SystemManaged": false,
+          "FieldType": "Integer",
+          "Nullable": true,
+          "Searchable": true,
+          "Settings": { "Choices": [], "LookupBindings": [] }
+        }
+      ],
+      "Table": "all_field",
+      "Searchable": true,
+      "Settings": {},
+      "Colours": {
+        "Primary": {
+          "Light": "#999",
+          "Lighter": "#b9b9b9",
+          "Base": "#6e6e6e",
+          "Dark": "#3d3d3d",
+          "Darker": "#0a0a0a"
+        },
+        "Complimentary": {
+          "Light": "#999",
+          "Lighter": "#b9b9b9",
+          "Base": "#6e6e6e",
+          "Dark": "#3d3d3d",
+          "Darker": "#0a0a0a"
+        }
+      },
+      "TitleField": "text_field",
+      "InheritLinks": [],
+      "TypeId": 15
+    },
+    {
+      "ListName": "MY NEW FILEs",
+      "ListNameSingular": "MY NEW FILE",
+      "NewItemPage": "MY NEW FILE Details",
+      "Fields": [
+        {
+          "Title": "asdasda",
+          "ColumnName": "asdasda",
+          "SystemManaged": false,
+          "FieldType": "Text",
+          "Nullable": true,
+          "Searchable": true,
+          "Settings": { "Choices": [], "LookupBindings": [] }
+        }
+      ],
+      "Table": "my_new_file",
+      "Searchable": true,
+      "Settings": {},
+      "Colours": {
+        "Primary": {
+          "Light": "#999",
+          "Lighter": "#b9b9b9",
+          "Base": "#6e6e6e",
+          "Dark": "#3d3d3d",
+          "Darker": "#0a0a0a"
+        },
+        "Complimentary": {
+          "Light": "#999",
+          "Lighter": "#b9b9b9",
+          "Base": "#6e6e6e",
+          "Dark": "#3d3d3d",
+          "Darker": "#0a0a0a"
+        }
+      },
+      "TitleField": "asdasda",
+      "InheritLinks": [],
+      "TypeId": 13
+    },
+    {
+      "Namespace": "SYSTEM",
+      "Title": "Universal Links",
+      "ExcludeDefaultFields": true,
+      "ListName": "Universal Links",
+      "ListNameSingular": "Universal Link",
+      "Table": "universal_link",
+      "NewItemPage": "",
+      "Settings": {
+        "Sealed": true,
+        "DisablePermissions": true,
+        "DisableUniversalLinks": true,
+        "DisableAttachments": true,
+        "DisableEntityFolder": true,
+        "DisablePages": true,
+        "InheritLinks": false,
+        "DisableSoftDelete": true
+      },
+      "SystemManaged": true,
+      "ShortName": "LINK",
+      "Searchable": false,
+      "Pipeline": { "Create": [], "Update": [] },
+      "Fields": [
+        {
+          "Title": "Principals",
+          "FieldType": "Lookup",
+          "ColumnName": "principal_id",
+          "Nullable": true,
+          "SystemManaged": true,
+          "Settings": {
+            "LookupField": "display_name",
+            "LookupList": "Principals"
+          }
+        },
+        {
+          "Title": "Notes",
+          "FieldType": "Lookup",
+          "ColumnName": "note_id",
+          "Nullable": true,
+          "SystemManaged": true,
+          "Settings": { "LookupField": "title", "LookupList": "Notes" }
+        },
+        {
+          "Title": "Tasks",
+          "FieldType": "Lookup",
+          "ColumnName": "task_id",
+          "Nullable": true,
+          "SystemManaged": true,
+          "Settings": { "LookupField": "title", "LookupList": "Tasks" }
+        },
+        {
+          "Title": "Notifications",
+          "FieldType": "Lookup",
+          "ColumnName": "notification_id",
+          "Nullable": true,
+          "SystemManaged": true,
+          "Settings": { "LookupField": "title", "LookupList": "Notifications" }
+        },
+        {
+          "Title": "Process Diagrams",
+          "FieldType": "Lookup",
+          "ColumnName": "process_diagram_id",
+          "Nullable": true,
+          "SystemManaged": true,
+          "Settings": {
+            "LookupField": "title",
+            "LookupList": "Process Diagrams"
+          }
+        },
+        {
+          "Title": "Process Runs",
+          "FieldType": "Lookup",
+          "ColumnName": "process_run_id",
+          "Nullable": true,
+          "SystemManaged": true,
+          "Settings": { "LookupField": "title", "LookupList": "Process Runs" }
+        },
+        {
+          "Title": "Process Artifacts",
+          "FieldType": "Lookup",
+          "ColumnName": "process_artifact_id",
+          "Nullable": true,
+          "SystemManaged": true,
+          "Settings": {
+            "LookupField": "title",
+            "LookupList": "Process Artifacts"
+          }
+        },
+        {
+          "Title": "Database Migrations",
+          "FieldType": "Lookup",
+          "ColumnName": "sys_database_migration_id",
+          "Nullable": true,
+          "SystemManaged": true,
+          "Settings": {
+            "LookupField": "title",
+            "LookupList": "Database Migrations"
+          }
+        },
+        {
+          "Title": "Test Forms",
+          "FieldType": "Lookup",
+          "ColumnName": "test_form_id",
+          "Nullable": true,
+          "SystemManaged": true,
+          "Settings": { "LookupField": "title", "LookupList": "Test Forms" }
+        },
+        {
+          "Title": "All Fields",
+          "FieldType": "Lookup",
+          "ColumnName": "all_field_id",
+          "Nullable": true,
+          "SystemManaged": true,
+          "Settings": {
+            "LookupField": "text_field",
+            "LookupList": "All Fields"
+          }
+        },
+        {
+          "Title": "MY NEW FILEs",
+          "FieldType": "Lookup",
+          "ColumnName": "my_new_file_id",
+          "Nullable": true,
+          "SystemManaged": true,
+          "Settings": { "LookupField": "asdasda", "LookupList": "MY NEW FILEs" }
+        },
+        {
+          "ColumnName": "column_name",
+          "FieldType": "Text",
+          "Title": "Lookup Column Name"
+        },
+        {
+          "ColumnName": "entity_type_id",
+          "FieldType": "Lookup",
+          "Title": "Entity Type ID",
+          "Settings": { "LookupList": "Entity Types" }
+        },
+        {
+          "ColumnName": "self_reference_id",
+          "FieldType": "Number",
+          "Title": "Self Reference ID"
+        },
+        {
+          "ColumnName": "choice_value",
+          "FieldType": "Text",
+          "Title": "Choice Value"
+        }
+      ],
+      "TypeId": 9
+    }
+  ],
+  "Pages": {
+    "Explorer": {
+      "Principal Details": {
+        "id": "Principal Details",
+        "layouts": {
+          "Principals Details_GridLayout1": [
+            257,
+            3598,
+            257,
+            3592,
+            257,
+            3588,
+            257,
+            2062,
+            257,
+            2056,
+            257,
+            2052,
+            257,
+            1038,
+            257,
+            1032,
+            257,
+            1028
+          ],
+          "Form15549549597392": [
+            3588,
+            3598,
+            1033,
+            3592,
+            1033,
+            3588,
+            1033,
+            2062,
+            2052,
+            2056,
+            1033,
+            2052,
+            1033,
+            1038,
+            1033,
+            1032,
+            1032,
+            1028
+          ],
+          "TextField15549549781144": [
+            2049,
+            3598,
+            2049,
+            3592,
+            2049,
+            3588,
+            769,
+            2062,
+            1025,
+            2056,
+            2049,
+            2052,
+            2049,
+            1038,
+            2049,
+            1032,
+            2049,
+            1028
+          ],
+          "TextField15549549781175": [
+            2049,
+            3598,
+            2049,
+            3592,
+            2049,
+            3588,
+            66305,
+            2062,
+            66561,
+            2056,
+            67585,
+            2052,
+            2049,
+            1038,
+            2049,
+            1032,
+            2049,
+            1028
+          ],
+          "TextField15549549781196": [
+            2049,
+            3598,
+            2049,
+            3592,
+            2049,
+            3588,
+            50332417,
+            2062,
+            67109889,
+            2056,
+            198657,
+            2052,
+            2049,
+            1038,
+            2049,
+            1032,
+            2049,
+            1028
+          ],
+          "TextField15549549781227": [
+            2049,
+            3598,
+            2049,
+            3592,
+            2049,
+            3588,
+            131841,
+            2062,
+            132097,
+            2056,
+            264193,
+            2052,
+            2049,
+            1038,
+            2049,
+            1032,
+            2049,
+            1028
+          ],
+          "TextField15549549781258": [
+            2049,
+            3598,
+            2049,
+            3592,
+            2049,
+            3588,
+            50397953,
+            2062,
+            67175425,
+            2056,
+            329729,
+            2052,
+            2049,
+            1038,
+            2049,
+            1032,
+            2049,
+            1028
+          ],
+          "TextField15549549781289": [
+            2049,
+            3598,
+            2049,
+            3592,
+            2049,
+            3588,
+            50463489,
+            2062,
+            67240961,
+            2056,
+            395265,
+            2052,
+            2049,
+            1038,
+            2049,
+            1032,
+            2049,
+            1028
+          ],
+          "ChoiceField155495497813410": [
+            2049,
+            3598,
+            2049,
+            3592,
+            2049,
+            3588,
+            100663809,
+            2062,
+            67306497,
+            2056,
+            133121,
+            2052,
+            2049,
+            1038,
+            2049,
+            1032,
+            2049,
+            1028
+          ]
+        },
+        "body": {
+          "id": "Principals Details_GridLayout1",
+          "type": "GridLayout",
+          "children": [
+            {
+              "id": "Form15549549597392",
+              "type": "Form",
+              "overlayDisabled": false,
+              "children": [
+                {
+                  "id": "TextField15549549781144",
+                  "type": "TextField",
+                  "overlayDisabled": false,
+                  "children": [],
+                  "attributes": { "config": {}, "field": "display_name" }
+                },
+                {
+                  "id": "TextField15549549781175",
+                  "type": "TextField",
+                  "overlayDisabled": false,
+                  "children": [],
+                  "attributes": { "config": {}, "field": "email" }
+                },
+                {
+                  "id": "TextField15549549781196",
+                  "type": "TextField",
+                  "overlayDisabled": false,
+                  "children": [],
+                  "attributes": { "config": {}, "field": "upn" }
+                },
+                {
+                  "id": "TextField15549549781227",
+                  "type": "TextField",
+                  "overlayDisabled": false,
+                  "children": [],
+                  "attributes": { "config": {}, "field": "department" }
+                },
+                {
+                  "id": "TextField15549549781258",
+                  "type": "TextField",
+                  "overlayDisabled": false,
+                  "children": [],
+                  "attributes": { "config": {}, "field": "given_names" }
+                },
+                {
+                  "id": "TextField15549549781289",
+                  "type": "TextField",
+                  "overlayDisabled": false,
+                  "children": [],
+                  "attributes": { "config": {}, "field": "surname" }
+                },
+                {
+                  "id": "ChoiceField155495497813410",
+                  "type": "ChoiceField",
+                  "overlayDisabled": false,
+                  "children": [],
+                  "attributes": { "config": {}, "field": "type" }
+                }
+              ],
+              "attributes": { "config": { "title": "" } }
+            }
+          ],
+          "attributes": {}
+        },
+        "attributes": { "itemId": 2, "pageId": 0, "itemType": 1 },
+        "jumbotronEnabled": true
+      },
+      "Principals Files": {
+        "id": "Principals Files",
+        "layouts": {},
+        "body": {
+          "id": "Horizontal Layout1632",
+          "type": "Horizontal Layout",
+          "attributes": { "config": { "children": [] } },
+          "children": [
+            {
+              "id": "File Browser1633",
+              "attributes": { "config": { "previewEnabled": true } },
+              "type": "File Browser",
+              "children": []
+            }
+          ]
+        },
+        "attributes": {
+          "pageId": 0,
+          "itemType": 0,
+          "linkItemId": 1,
+          "linkItemType": 2
+        }
+      },
+      "Principal": {
+        "layouts": {},
+        "body": {
+          "id": "Principals_TabStrip1",
+          "type": "TabStrip",
+          "children": [],
+          "attributes": {
+            "config": {
+              "jumbotron": true,
+              "title": "View Principals",
+              "tabs": [
+                {
+                  "title": "Details",
+                  "page": "Principal Details",
+                  "hidden": false,
+                  "attributes": {
+                    "itemId": "{itemId}",
+                    "itemType": "Principals",
+                    "linkItemType": "Principals",
+                    "linkItemId": "{itemId}"
+                  }
+                },
+                {
+                  "title": "Activity",
+                  "page": "Principal Activity",
+                  "hidden": false,
+                  "attributes": {
+                    "itemId": "{itemId}",
+                    "itemType": "Principals",
+                    "linkItemType": "Principals",
+                    "linkItemId": "{itemId}"
+                  }
+                },
+                {
+                  "title": "Files",
+                  "page": "Principals Files",
+                  "hidden": true,
+                  "attributes": {
+                    "itemId": "{itemId}",
+                    "linkItemType": "Principals",
+                    "linkItemId": "{itemId}",
+                    "itemType": "Principals"
+                  }
+                },
+                {
+                  "title": "Notes",
+                  "page": "Notes",
+                  "hidden": true,
+                  "attributes": {
+                    "linkItemType": "Principals",
+                    "linkItemId": "{itemId}",
+                    "itemType": "Notes"
+                  }
+                },
+                {
+                  "title": "Tasks",
+                  "page": "Tasks",
+                  "hidden": false,
+                  "attributes": {
+                    "linkItemType": "Principals",
+                    "linkItemId": "{itemId}",
+                    "itemType": "Tasks"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "id": "Principal",
+        "attributes": { "pageId": 0, "itemType": 1, "itemId": 2 }
+      },
+      "Principals": {
+        "id": "Principals",
+        "layouts": {
+          "DataTable1": [
+            3593,
+            3598,
+            2057,
+            2056,
+            1029,
+            1028,
+            257,
+            3592,
+            257,
+            3588,
+            257,
+            2062,
+            257,
+            2052,
+            257,
+            1038,
+            257,
+            1032
+          ],
+          "Horizontal Layout1": [
+            257,
+            3598,
+            257,
+            3592,
+            257,
+            3588,
+            257,
+            2062,
+            257,
+            2056,
+            257,
+            2052,
+            257,
+            1038,
+            257,
+            1032,
+            257,
+            1028
+          ]
+        },
+        "body": {
+          "id": "Horizontal Layout1",
+          "type": "Horizontal Layout",
+          "children": [
+            {
+              "id": "DataTable1",
+              "type": "DataTable",
+              "children": [],
+              "attributes": { "config": { "list": "Principals" } }
+            }
+          ],
+          "attributes": {
+            "config": { "children": [{ "style": {} }, { "w": 1 }] }
+          }
+        },
+        "attributes": {
+          "pageId": 0,
+          "itemType": 0,
+          "linkItemId": 1,
+          "linkItemType": 2
+        }
+      },
+      "Principal Activity": {
+        "id": "Principal Activity",
+        "layouts": {},
+        "body": {
+          "type": "Horizontal Layout",
+          "id": "Horizontal Layout1634",
+          "attributes": { "config": { "children": [{ "w": 1 }] } },
+          "children": [
+            {
+              "id": "ActivityFeed1635",
+              "type": "ActivityFeed",
+              "attributes": { "config": {} },
+              "children": []
+            }
+          ]
+        },
+        "attributes": {
+          "pageId": 0,
+          "itemType": 0,
+          "linkItemId": 1,
+          "linkItemType": 2
+        }
+      },
+      "Task Details": {
+        "id": "Task Details",
+        "layouts": {
+          "Tasks Details_GridLayout1": [
+            257,
+            3598,
+            257,
+            3592,
+            257,
+            3588,
+            257,
+            2062,
+            257,
+            2056,
+            257,
+            2052,
+            257,
+            1038,
+            257,
+            1032,
+            257,
+            1028
+          ],
+          "cde305ea-55e6-48ca-a483-55095f5b5bb0": [
+            2565,
+            3598,
+            1030,
+            3592,
+            1030,
+            3588,
+            1030,
+            2062,
+            1541,
+            2056,
+            1030,
+            2052,
+            1030,
+            1038,
+            1030,
+            1032,
+            1031,
+            1028
+          ],
+          "5a93463d-0e29-40b9-9ceb-06cbcd664c54": [
+            2049,
+            3598,
+            2049,
+            3592,
+            2049,
+            3588,
+            2049,
+            2062,
+            2049,
+            2056,
+            2049,
+            2052,
+            2049,
+            1038,
+            2049,
+            1032,
+            2049,
+            1028
+          ],
+          "5a64abe5-9396-4a3c-b3b6-0db14a0b1de0": [
+            2049,
+            3598,
+            2049,
+            3592,
+            2049,
+            3588,
+            197633,
+            2062,
+            66561,
+            2056,
+            67585,
+            2052,
+            2049,
+            1038,
+            2049,
+            1032,
+            2049,
+            1028
+          ],
+          "79c59b9a-bef9-44b6-90b8-4b03ea1cbe89": [
+            2049,
+            3598,
+            2049,
+            3592,
+            2049,
+            3588,
+            67306497,
+            2062,
+            67175425,
+            2056,
+            133121,
+            2052,
+            2049,
+            1038,
+            2049,
+            1032,
+            2049,
+            1028
+          ],
+          "34c934c7-b364-41e3-810c-57c7c708f551": [
+            2050,
+            3598,
+            2050,
+            3592,
+            2050,
+            3588,
+            67586,
+            2062,
+            133122,
+            2056,
+            198658,
+            2052,
+            2050,
+            1038,
+            2050,
+            1032,
+            2050,
+            1028
+          ],
+          "3f2f8526-59dd-46ef-8e9c-0009baf0a9cf": [
+            2049,
+            3598,
+            2049,
+            3592,
+            2049,
+            3588,
+            263169,
+            2062,
+            263169,
+            2056,
+            329729,
+            2052,
+            2049,
+            1038,
+            2049,
+            1032,
+            2049,
+            1028
+          ],
+          "e77dab8a-8c9b-4b34-b43a-e5c5b5b604fb": [
+            2049,
+            3598,
+            2049,
+            3592,
+            2049,
+            3588,
+            67372033,
+            2062,
+            67372033,
+            2056,
+            395265,
+            2052,
+            2049,
+            1038,
+            2049,
+            1032,
+            2049,
+            1028
+          ],
+          "991090fc-6f80-499e-8c56-4c2153a10e3e": [
+            168035332,
+            3598,
+            459268,
+            3592,
+            524804,
+            3588,
+            590340,
+            2062,
+            328707,
+            2056,
+            393732,
+            2052,
+            516,
+            1038,
+            516,
+            1032,
+            721923,
+            1028
+          ],
+          "81aac9a8-d15b-4741-91cd-a7c955713e33": [
+            167773188,
+            3598,
+            393473,
+            3592,
+            786689,
+            3588,
+            393473,
+            2062,
+            100663813,
+            2056,
+            655617,
+            2052,
+            257,
+            1038,
+            257,
+            1032,
+            459780,
+            1028
+          ],
+          "Embedded Files15549537164602": [
+            330243,
+            3598,
+            257,
+            3592,
+            257,
+            3588,
+            257,
+            2062,
+            67437571,
+            2056,
+            257,
+            2052,
+            257,
+            1038,
+            257,
+            1032,
+            918531,
+            1028
+          ]
+        },
+        "body": {
+          "id": "Tasks Details_GridLayout1",
+          "type": "GridLayout",
+          "children": [
+            {
+              "id": "cde305ea-55e6-48ca-a483-55095f5b5bb0",
+              "type": "Form",
+              "overlayDisabled": false,
+              "children": [
+                {
+                  "id": "5a93463d-0e29-40b9-9ceb-06cbcd664c54",
+                  "type": "TextField",
+                  "overlayDisabled": false,
+                  "children": [],
+                  "attributes": { "config": {}, "field": "title" }
+                },
+                {
+                  "id": "5a64abe5-9396-4a3c-b3b6-0db14a0b1de0",
+                  "type": "DateField",
+                  "overlayDisabled": false,
+                  "children": [],
+                  "attributes": { "config": {}, "field": "start_date" }
+                },
+                {
+                  "id": "79c59b9a-bef9-44b6-90b8-4b03ea1cbe89",
+                  "type": "DateField",
+                  "overlayDisabled": false,
+                  "children": [],
+                  "attributes": { "config": {}, "field": "due_date" }
+                },
+                {
+                  "id": "34c934c7-b364-41e3-810c-57c7c708f551",
+                  "type": "NoteField",
+                  "overlayDisabled": false,
+                  "children": [],
+                  "attributes": { "config": {}, "field": "description" }
+                },
+                {
+                  "id": "3f2f8526-59dd-46ef-8e9c-0009baf0a9cf",
+                  "type": "ChoiceField",
+                  "overlayDisabled": false,
+                  "children": [],
+                  "attributes": { "config": {}, "field": "status" }
+                },
+                {
+                  "id": "e77dab8a-8c9b-4b34-b43a-e5c5b5b604fb",
+                  "type": "UserField",
+                  "overlayDisabled": false,
+                  "children": [],
+                  "attributes": { "config": {}, "field": "assigned_to_id" }
+                }
+              ],
+              "attributes": { "config": { "title": "Task Details" } }
+            },
+            {
+              "id": "991090fc-6f80-499e-8c56-4c2153a10e3e",
+              "type": "EmbeddedForm",
+              "overlayDisabled": false,
+              "children": [],
+              "attributes": { "config": {} }
+            },
+            {
+              "id": "81aac9a8-d15b-4741-91cd-a7c955713e33",
+              "type": "LinkedItemsList",
+              "overlayDisabled": false,
+              "children": [],
+              "attributes": { "config": { "excludeTypes": ["Notes"] } }
+            },
+            {
+              "id": "Embedded Files15549537164602",
+              "type": "Embedded Files",
+              "overlayDisabled": false,
+              "children": [],
+              "attributes": { "config": {} }
+            }
+          ],
+          "attributes": {}
+        },
+        "attributes": { "itemId": 2, "pageId": 0, "itemType": 1 },
+        "jumbotronEnabled": true
+      },
+      "Tasks Files": {
+        "id": "Tasks Files",
+        "layouts": {},
+        "body": {
+          "id": "Horizontal Layout1636",
+          "type": "Horizontal Layout",
+          "attributes": { "config": { "children": [] } },
+          "children": [
+            {
+              "id": "File Browser1637",
+              "attributes": { "config": { "previewEnabled": true } },
+              "type": "File Browser",
+              "children": []
+            }
+          ]
+        },
+        "attributes": {
+          "pageId": 0,
+          "itemType": 0,
+          "linkItemId": 1,
+          "linkItemType": 2
+        }
+      },
+      "Task": {
+        "layouts": {},
+        "body": {
+          "id": "Tasks_TabStrip1",
+          "type": "TabStrip",
+          "children": [],
+          "attributes": {
+            "config": {
+              "jumbotron": true,
+              "title": "View Tasks",
+              "tabs": [
+                {
+                  "title": "Details",
+                  "page": "Task Details",
+                  "hidden": false,
+                  "attributes": {
+                    "itemId": "{itemId}",
+                    "itemType": "Tasks",
+                    "linkItemType": "Tasks",
+                    "linkItemId": "{itemId}"
+                  }
+                },
+                {
+                  "title": "Activity",
+                  "page": "Task Activity",
+                  "hidden": false,
+                  "attributes": {
+                    "itemId": "{itemId}",
+                    "itemType": "Tasks",
+                    "linkItemType": "Tasks",
+                    "linkItemId": "{itemId}"
+                  }
+                },
+                {
+                  "title": "Files",
+                  "page": "Tasks Files",
+                  "hidden": true,
+                  "attributes": {
+                    "itemId": "{itemId}",
+                    "linkItemType": "Tasks",
+                    "linkItemId": "{itemId}",
+                    "itemType": "Tasks"
+                  }
+                },
+                {
+                  "title": "Notes",
+                  "page": "Notes",
+                  "hidden": true,
+                  "attributes": {
+                    "linkItemType": "Tasks",
+                    "linkItemId": "{itemId}",
+                    "itemType": "Notes"
+                  }
+                },
+                {
+                  "title": "Tasks",
+                  "page": "Tasks",
+                  "hidden": false,
+                  "attributes": {
+                    "linkItemType": "Tasks",
+                    "linkItemId": "{itemId}",
+                    "itemType": "Tasks"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "id": "Task",
+        "attributes": { "pageId": 0, "itemType": 1, "itemId": 2 }
+      },
+      "Tasks": {
+        "id": "Tasks",
+        "layouts": {
+          "DataTable1": [
+            3593,
+            3598,
+            2057,
+            2056,
+            1029,
+            1028,
+            257,
+            3592,
+            257,
+            3588,
+            257,
+            2062,
+            257,
+            2052,
+            257,
+            1038,
+            257,
+            1032
+          ],
+          "Horizontal Layout1": [
+            257,
+            3598,
+            257,
+            3592,
+            257,
+            3588,
+            257,
+            2062,
+            257,
+            2056,
+            257,
+            2052,
+            257,
+            1038,
+            257,
+            1032,
+            257,
+            1028
+          ]
+        },
+        "body": {
+          "id": "Horizontal Layout1",
+          "type": "Horizontal Layout",
+          "children": [
+            {
+              "id": "DataTable1",
+              "type": "DataTable",
+              "children": [],
+              "attributes": { "config": { "list": "Tasks" } }
+            }
+          ],
+          "attributes": {
+            "config": { "children": [{ "style": {} }, { "w": 1 }] }
+          }
+        },
+        "attributes": {
+          "pageId": 0,
+          "itemType": 0,
+          "linkItemId": 1,
+          "linkItemType": 2
+        }
+      },
+      "Task Activity": {
+        "id": "Task Activity",
+        "layouts": {},
+        "body": {
+          "type": "Horizontal Layout",
+          "id": "Horizontal Layout1638",
+          "attributes": { "config": { "children": [{ "w": 1 }] } },
+          "children": [
+            {
+              "id": "ActivityFeed1639",
+              "type": "ActivityFeed",
+              "attributes": { "config": {} },
+              "children": []
+            }
+          ]
+        },
+        "attributes": {
+          "pageId": 0,
+          "itemType": 0,
+          "linkItemId": 1,
+          "linkItemType": 2
+        }
+      },
+      "Process Diagram Details": {
+        "id": "Process Diagram Details",
+        "layouts": {
+          "Process Diagram Details_GridLayout1": [
+            257,
+            3598,
+            257,
+            3592,
+            257,
+            3588,
+            257,
+            2062,
+            257,
+            2056,
+            257,
+            2052,
+            257,
+            1038,
+            257,
+            1032,
+            257,
+            1028
+          ],
+          "Form15571989942214": [
+            1031,
+            3598,
+            1030,
+            3592,
+            1030,
+            3588,
+            1030,
+            2062,
+            1031,
+            2056,
+            1030,
+            2052,
+            1030,
+            1038,
+            1030,
+            1032,
+            1030,
+            1028
+          ],
+          "LinkedItemsList15571990015806": [
+            67110151,
+            3598,
+            257,
+            3592,
+            257,
+            3588,
+            257,
+            2062,
+            67109891,
+            2056,
+            257,
+            2052,
+            257,
+            1038,
+            257,
+            1032,
+            394244,
+            1028
+          ],
+          "ActivityFeed15571990044978": [
+            150996231,
+            3598,
+            514,
+            3592,
+            514,
+            3588,
+            514,
+            2062,
+            67306500,
+            2056,
+            514,
+            2052,
+            514,
+            1038,
+            514,
+            1032,
+            656388,
+            1028
+          ]
+        },
+        "body": {
+          "id": "Process Diagram Details_GridLayout1",
+          "type": "GridLayout",
+          "children": [
+            {
+              "id": "Form15571989942214",
+              "type": "Form",
+              "overlayDisabled": false,
+              "children": [],
+              "attributes": { "config": { "title": "" } }
+            },
+            {
+              "id": "LinkedItemsList15571990015806",
+              "type": "LinkedItemsList",
+              "overlayDisabled": false,
+              "children": [],
+              "attributes": { "config": { "excludeTypes": ["Notes"] } }
+            },
+            {
+              "id": "ActivityFeed15571990044978",
+              "type": "ActivityFeed",
+              "overlayDisabled": false,
+              "children": [],
+              "attributes": { "config": {} }
+            }
+          ],
+          "attributes": { "config": { "innerScroll": false } }
+        },
+        "attributes": { "itemId": 2, "pageId": 0, "itemType": 1 },
+        "jumbotronEnabled": true
+      },
+      "Process Diagrams Files": {
+        "id": "Process Diagrams Files",
+        "layouts": {},
+        "body": {
+          "id": "Horizontal Layout1640",
+          "type": "Horizontal Layout",
+          "attributes": { "config": { "children": [] } },
+          "children": [
+            {
+              "id": "File Browser1641",
+              "attributes": { "config": { "previewEnabled": true } },
+              "type": "File Browser",
+              "children": []
+            }
+          ]
+        },
+        "attributes": {
+          "pageId": 0,
+          "itemType": 0,
+          "linkItemId": 1,
+          "linkItemType": 2
+        }
+      },
+      "Process Diagram": {
+        "layouts": {
+          "Process Diagrams_TabStrip1": [
+            257,
+            3598,
+            257,
+            3592,
+            257,
+            3588,
+            257,
+            2062,
+            257,
+            2056,
+            257,
+            2052,
+            257,
+            1038,
+            257,
+            1032,
+            257,
+            1028
+          ]
+        },
+        "body": {
+          "id": "Process Diagrams_TabStrip1",
+          "type": "TabStrip",
+          "children": [],
+          "attributes": {
+            "config": {
+              "jumbotron": true,
+              "title": "View Process Diagrams",
+              "tabs": [
+                {
+                  "title": "Details",
+                  "page": "Process Diagram Details",
+                  "hidden": false,
+                  "attributes": {
+                    "itemId": "{itemId}",
+                    "itemType": "Process Diagrams",
+                    "linkItemType": "Process Diagrams",
+                    "linkItemId": "{itemId}"
+                  }
+                },
+                {
+                  "title": "Activity",
+                  "page": "Process Diagram Activity",
+                  "hidden": false,
+                  "attributes": {
+                    "itemId": "{itemId}",
+                    "itemType": "Process Diagrams",
+                    "linkItemType": "Process Diagrams",
+                    "linkItemId": "{itemId}"
+                  }
+                },
+                {
+                  "title": "Files",
+                  "page": "Process Diagrams Files",
+                  "hidden": true,
+                  "attributes": {
+                    "itemId": "{itemId}",
+                    "linkItemType": "Process Diagrams",
+                    "linkItemId": "{itemId}",
+                    "itemType": "Process Diagrams"
+                  }
+                },
+                {
+                  "title": "Notes",
+                  "page": "Notes",
+                  "hidden": true,
+                  "attributes": {
+                    "linkItemType": "Process Diagrams",
+                    "linkItemId": "{itemId}",
+                    "itemType": "Notes"
+                  }
+                },
+                {
+                  "title": "Tasks",
+                  "page": "Tasks",
+                  "hidden": true,
+                  "attributes": {
+                    "linkItemType": "Process Diagrams",
+                    "linkItemId": "{itemId}",
+                    "itemType": "Tasks"
+                  }
+                },
+                {
+                  "title": "Child Process Runs",
+                  "page": "Process Runs",
+                  "hidden": false,
+                  "attributes": {
+                    "linkItemType": "Process Diagrams",
+                    "linkItemId": "{itemId}",
+                    "itemType": "Process Runs"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "id": "Process Diagram",
+        "attributes": { "pageId": 0, "itemType": 1, "itemId": 2 },
+        "jumbotronEnabled": true
+      },
+      "Process Diagrams": {
+        "id": "Process Diagrams",
+        "layouts": {
+          "DataTable1": [
+            3593,
+            3598,
+            2057,
+            2056,
+            1029,
+            1028,
+            257,
+            3592,
+            257,
+            3588,
+            257,
+            2062,
+            257,
+            2052,
+            257,
+            1038,
+            257,
+            1032
+          ],
+          "Horizontal Layout1": [
+            257,
+            3598,
+            257,
+            3592,
+            257,
+            3588,
+            257,
+            2062,
+            257,
+            2056,
+            257,
+            2052,
+            257,
+            1038,
+            257,
+            1032,
+            257,
+            1028
+          ]
+        },
+        "body": {
+          "id": "Horizontal Layout1",
+          "type": "Horizontal Layout",
+          "children": [
+            {
+              "id": "DataTable1",
+              "type": "DataTable",
+              "children": [],
+              "attributes": { "config": { "list": "Process Diagrams" } }
+            }
+          ],
+          "attributes": {
+            "config": { "children": [{ "style": {} }, { "w": 1 }] }
+          }
+        },
+        "attributes": {
+          "pageId": 0,
+          "itemType": 0,
+          "linkItemId": 1,
+          "linkItemType": 2
+        },
+        "jumbotronEnabled": true
+      },
+      "Process Diagram Activity": {
+        "id": "Process Diagram Activity",
+        "layouts": {},
+        "body": {
+          "type": "Horizontal Layout",
+          "id": "Horizontal Layout1642",
+          "attributes": { "config": { "children": [{ "w": 1 }] } },
+          "children": [
+            {
+              "id": "ActivityFeed1643",
+              "type": "ActivityFeed",
+              "attributes": { "config": {} },
+              "children": []
+            }
+          ]
+        },
+        "attributes": {
+          "pageId": 0,
+          "itemType": 0,
+          "linkItemId": 1,
+          "linkItemType": 2
+        }
+      },
+      "Process Run Details": {
+        "id": "Process Run Details",
+        "layouts": {
+          "Process Run Details_GridLayout1": [
+            257,
+            3598,
+            257,
+            3592,
+            257,
+            3588,
+            257,
+            2062,
+            257,
+            2056,
+            257,
+            2052,
+            257,
+            1038,
+            257,
+            1032,
+            257,
+            1028
+          ],
+          "Form15571989942214": [
+            1031,
+            3598,
+            1030,
+            3592,
+            1030,
+            3588,
+            1030,
+            2062,
+            1031,
+            2056,
+            1030,
+            2052,
+            1030,
+            1038,
+            1030,
+            1032,
+            1030,
+            1028
+          ],
+          "LinkedItemsList15571990015806": [
+            67110151,
+            3598,
+            257,
+            3592,
+            257,
+            3588,
+            257,
+            2062,
+            67109891,
+            2056,
+            257,
+            2052,
+            257,
+            1038,
+            257,
+            1032,
+            394244,
+            1028
+          ],
+          "ActivityFeed15571990044978": [
+            150996231,
+            3598,
+            514,
+            3592,
+            514,
+            3588,
+            514,
+            2062,
+            67306500,
+            2056,
+            514,
+            2052,
+            514,
+            1038,
+            514,
+            1032,
+            656388,
+            1028
+          ]
+        },
+        "body": {
+          "id": "Process Run Details_GridLayout1",
+          "type": "GridLayout",
+          "children": [
+            {
+              "id": "Form15571989942214",
+              "type": "Form",
+              "overlayDisabled": false,
+              "children": [],
+              "attributes": { "config": { "title": "" } }
+            },
+            {
+              "id": "LinkedItemsList15571990015806",
+              "type": "LinkedItemsList",
+              "overlayDisabled": false,
+              "children": [],
+              "attributes": { "config": { "excludeTypes": ["Notes"] } }
+            },
+            {
+              "id": "ActivityFeed15571990044978",
+              "type": "ActivityFeed",
+              "overlayDisabled": false,
+              "children": [],
+              "attributes": { "config": {} }
+            }
+          ],
+          "attributes": { "config": { "innerScroll": false } }
+        },
+        "attributes": { "itemId": 2, "pageId": 0, "itemType": 1 },
+        "jumbotronEnabled": true
+      },
+      "Process Runs Files": {
+        "id": "Process Runs Files",
+        "layouts": {},
+        "body": {
+          "id": "Horizontal Layout1644",
+          "type": "Horizontal Layout",
+          "attributes": { "config": { "children": [] } },
+          "children": [
+            {
+              "id": "File Browser1645",
+              "attributes": { "config": { "previewEnabled": true } },
+              "type": "File Browser",
+              "children": []
+            }
+          ]
+        },
+        "attributes": {
+          "pageId": 0,
+          "itemType": 0,
+          "linkItemId": 1,
+          "linkItemType": 2
+        }
+      },
+      "Process Run": {
+        "layouts": {},
+        "body": {
+          "id": "Process Runs_TabStrip1",
+          "type": "TabStrip",
+          "children": [],
+          "attributes": {
+            "config": {
+              "jumbotron": true,
+              "title": "View Process Runs",
+              "tabs": [
+                {
+                  "title": "Details",
+                  "page": "Process Run Details",
+                  "hidden": false,
+                  "attributes": {
+                    "itemId": "{itemId}",
+                    "itemType": "Process Runs",
+                    "linkItemType": "Process Runs",
+                    "linkItemId": "{itemId}"
+                  }
+                },
+                {
+                  "title": "Activity",
+                  "page": "Process Run Activity",
+                  "hidden": false,
+                  "attributes": {
+                    "itemId": "{itemId}",
+                    "itemType": "Process Runs",
+                    "linkItemType": "Process Runs",
+                    "linkItemId": "{itemId}"
+                  }
+                },
+                {
+                  "title": "Files",
+                  "page": "Process Runs Files",
+                  "hidden": true,
+                  "attributes": {
+                    "itemId": "{itemId}",
+                    "linkItemType": "Process Runs",
+                    "linkItemId": "{itemId}",
+                    "itemType": "Process Runs"
+                  }
+                },
+                {
+                  "title": "Notes",
+                  "page": "Notes",
+                  "hidden": true,
+                  "attributes": {
+                    "linkItemType": "Process Runs",
+                    "linkItemId": "{itemId}",
+                    "itemType": "Notes"
+                  }
+                },
+                {
+                  "title": "Tasks",
+                  "page": "Tasks",
+                  "hidden": false,
+                  "attributes": {
+                    "linkItemType": "Process Runs",
+                    "linkItemId": "{itemId}",
+                    "itemType": "Tasks"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "id": "Process Run",
+        "attributes": { "pageId": 0, "itemType": 1, "itemId": 2 }
+      },
+      "Process Runs": {
+        "id": "Process Runs",
+        "layouts": {
+          "DataTable1": [
+            3593,
+            3598,
+            2057,
+            2056,
+            1029,
+            1028,
+            257,
+            3592,
+            257,
+            3588,
+            257,
+            2062,
+            257,
+            2052,
+            257,
+            1038,
+            257,
+            1032
+          ],
+          "Horizontal Layout1": [
+            257,
+            3598,
+            257,
+            3592,
+            257,
+            3588,
+            257,
+            2062,
+            257,
+            2056,
+            257,
+            2052,
+            257,
+            1038,
+            257,
+            1032,
+            257,
+            1028
+          ]
+        },
+        "body": {
+          "id": "Horizontal Layout1",
+          "type": "Horizontal Layout",
+          "children": [
+            {
+              "id": "DataTable1",
+              "type": "DataTable",
+              "children": [],
+              "attributes": { "config": { "list": "Process Runs" } }
+            }
+          ],
+          "attributes": {
+            "config": { "children": [{ "style": {} }, { "w": 1 }] }
+          }
+        },
+        "attributes": {
+          "pageId": 0,
+          "itemType": 0,
+          "linkItemId": 1,
+          "linkItemType": 2
+        },
+        "jumbotronEnabled": true
+      },
+      "Process Run Activity": {
+        "id": "Process Run Activity",
+        "layouts": {},
+        "body": {
+          "type": "Horizontal Layout",
+          "id": "Horizontal Layout1646",
+          "attributes": { "config": { "children": [{ "w": 1 }] } },
+          "children": [
+            {
+              "id": "ActivityFeed1647",
+              "type": "ActivityFeed",
+              "attributes": { "config": {} },
+              "children": []
+            }
+          ]
+        },
+        "attributes": {
+          "pageId": 0,
+          "itemType": 0,
+          "linkItemId": 1,
+          "linkItemType": 2
+        }
+      },
+      "Process Artifact Details": {
+        "id": "Process Artifact Details",
+        "layouts": {
+          "Process Artifact Details_GridLayout1": [
+            257,
+            3598,
+            257,
+            3592,
+            257,
+            3588,
+            257,
+            2062,
+            257,
+            2056,
+            257,
+            2052,
+            257,
+            1038,
+            257,
+            1032,
+            257,
+            1028
+          ],
+          "Form15571989942214": [
+            1031,
+            3598,
+            1030,
+            3592,
+            1030,
+            3588,
+            1030,
+            2062,
+            1031,
+            2056,
+            1030,
+            2052,
+            1030,
+            1038,
+            1030,
+            1032,
+            1030,
+            1028
+          ],
+          "LinkedItemsList15571990015806": [
+            67110151,
+            3598,
+            257,
+            3592,
+            257,
+            3588,
+            257,
+            2062,
+            67109891,
+            2056,
+            257,
+            2052,
+            257,
+            1038,
+            257,
+            1032,
+            394244,
+            1028
+          ],
+          "ActivityFeed15571990044978": [
+            150996231,
+            3598,
+            514,
+            3592,
+            514,
+            3588,
+            514,
+            2062,
+            67306500,
+            2056,
+            514,
+            2052,
+            514,
+            1038,
+            514,
+            1032,
+            656388,
+            1028
+          ]
+        },
+        "body": {
+          "id": "Process Artifact Details_GridLayout1",
+          "type": "GridLayout",
+          "children": [
+            {
+              "id": "Form15571989942214",
+              "type": "Form",
+              "overlayDisabled": false,
+              "children": [],
+              "attributes": { "config": { "title": "" } }
+            },
+            {
+              "id": "LinkedItemsList15571990015806",
+              "type": "LinkedItemsList",
+              "overlayDisabled": false,
+              "children": [],
+              "attributes": { "config": { "excludeTypes": ["Notes"] } }
+            },
+            {
+              "id": "ActivityFeed15571990044978",
+              "type": "ActivityFeed",
+              "overlayDisabled": false,
+              "children": [],
+              "attributes": { "config": {} }
+            }
+          ],
+          "attributes": { "config": { "innerScroll": false } }
+        },
+        "attributes": { "itemId": 2, "pageId": 0, "itemType": 1 },
+        "jumbotronEnabled": true
+      },
+      "Process Artifacts Files": {
+        "id": "Process Artifacts Files",
+        "layouts": {},
+        "body": {
+          "id": "Horizontal Layout1648",
+          "type": "Horizontal Layout",
+          "attributes": { "config": { "children": [] } },
+          "children": [
+            {
+              "id": "File Browser1649",
+              "attributes": { "config": { "previewEnabled": true } },
+              "type": "File Browser",
+              "children": []
+            }
+          ]
+        },
+        "attributes": {
+          "pageId": 0,
+          "itemType": 0,
+          "linkItemId": 1,
+          "linkItemType": 2
+        }
+      },
+      "Process Artifact": {
+        "layouts": {},
+        "body": {
+          "id": "Process Artifacts_TabStrip1",
+          "type": "TabStrip",
+          "children": [],
+          "attributes": {
+            "config": {
+              "jumbotron": true,
+              "title": "View Process Artifacts",
+              "tabs": [
+                {
+                  "title": "Details",
+                  "page": "Process Artifact Details",
+                  "hidden": false,
+                  "attributes": {
+                    "itemId": "{itemId}",
+                    "itemType": "Process Artifacts",
+                    "linkItemType": "Process Artifacts",
+                    "linkItemId": "{itemId}"
+                  }
+                },
+                {
+                  "title": "Activity",
+                  "page": "Process Artifact Activity",
+                  "hidden": false,
+                  "attributes": {
+                    "itemId": "{itemId}",
+                    "itemType": "Process Artifacts",
+                    "linkItemType": "Process Artifacts",
+                    "linkItemId": "{itemId}"
+                  }
+                },
+                {
+                  "title": "Files",
+                  "page": "Process Artifacts Files",
+                  "hidden": true,
+                  "attributes": {
+                    "itemId": "{itemId}",
+                    "linkItemType": "Process Artifacts",
+                    "linkItemId": "{itemId}",
+                    "itemType": "Process Artifacts"
+                  }
+                },
+                {
+                  "title": "Notes",
+                  "page": "Notes",
+                  "hidden": true,
+                  "attributes": {
+                    "linkItemType": "Process Artifacts",
+                    "linkItemId": "{itemId}",
+                    "itemType": "Notes"
+                  }
+                },
+                {
+                  "title": "Tasks",
+                  "page": "Tasks",
+                  "hidden": false,
+                  "attributes": {
+                    "linkItemType": "Process Artifacts",
+                    "linkItemId": "{itemId}",
+                    "itemType": "Tasks"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "id": "Process Artifact",
+        "attributes": { "pageId": 0, "itemType": 1, "itemId": 2 }
+      },
+      "Process Artifacts": {
+        "id": "Process Artifacts",
+        "layouts": {
+          "DataTable1": [
+            3593,
+            3598,
+            2057,
+            2056,
+            1029,
+            1028,
+            257,
+            3592,
+            257,
+            3588,
+            257,
+            2062,
+            257,
+            2052,
+            257,
+            1038,
+            257,
+            1032
+          ],
+          "Horizontal Layout1": [
+            257,
+            3598,
+            257,
+            3592,
+            257,
+            3588,
+            257,
+            2062,
+            257,
+            2056,
+            257,
+            2052,
+            257,
+            1038,
+            257,
+            1032,
+            257,
+            1028
+          ]
+        },
+        "body": {
+          "id": "Horizontal Layout1",
+          "type": "Horizontal Layout",
+          "children": [
+            {
+              "id": "DataTable1",
+              "type": "DataTable",
+              "children": [],
+              "attributes": { "config": { "list": "Process Artifacts" } }
+            }
+          ],
+          "attributes": {
+            "config": { "children": [{ "style": {} }, { "w": 1 }] }
+          }
+        },
+        "attributes": {
+          "pageId": 0,
+          "itemType": 0,
+          "linkItemId": 1,
+          "linkItemType": 2
+        }
+      },
+      "Process Artifact Activity": {
+        "id": "Process Artifact Activity",
+        "layouts": {},
+        "body": {
+          "type": "Horizontal Layout",
+          "id": "Horizontal Layout1650",
+          "attributes": { "config": { "children": [{ "w": 1 }] } },
+          "children": [
+            {
+              "id": "ActivityFeed1651",
+              "type": "ActivityFeed",
+              "attributes": { "config": {} },
+              "children": []
+            }
+          ]
+        },
+        "attributes": {
+          "pageId": 0,
+          "itemType": 0,
+          "linkItemId": 1,
+          "linkItemType": 2
+        }
+      },
+      "Process Run Ledger": {
+        "list": "Process Runs",
+        "layouts": {
+          "Form15700848471065": [
+            1030,
+            3598,
+            1030,
+            3592,
+            1030,
+            3588,
+            1030,
+            2062,
+            1030,
+            2056,
+            1030,
+            2052,
+            1030,
+            1038,
+            1030,
+            1032,
+            1030,
+            1028
+          ],
+          "DataField15700848517416": [
+            2049,
+            3598,
+            2049,
+            3592,
+            2049,
+            3588,
+            2058,
+            2062,
+            2049,
+            2056,
+            2049,
+            2052,
+            2049,
+            1038,
+            2049,
+            1032,
+            2049,
+            1028
+          ]
+        },
+        "body": {
+          "id": "Form15700848471065",
+          "type": "Form",
+          "overlayDisabled": false,
+          "children": [
+            {
+              "id": "DataField15700848517416",
+              "type": "DataField",
+              "overlayDisabled": false,
+              "children": [],
+              "attributes": { "config": {}, "field": "ledger_data" }
+            }
+          ],
+          "attributes": { "config": { "title": "Process Ledger" } }
+        },
+        "id": "Process Run Ledger",
+        "jumbotronEnabled": true,
+        "attributes": { "pageId": 0, "itemType": 1, "itemId": 2 }
+      },
+      "Database Migration Details": {
+        "id": "Database Migration Details",
+        "layouts": {
+          "Database Migration Details_GridLayout1": [
+            257,
+            3598,
+            257,
+            3592,
+            257,
+            3588,
+            257,
+            2062,
+            257,
+            2056,
+            257,
+            2052,
+            257,
+            1038,
+            257,
+            1032,
+            257,
+            1028
+          ],
+          "Form15571989942214": [
+            1031,
+            3598,
+            1030,
+            3592,
+            1030,
+            3588,
+            1030,
+            2062,
+            1031,
+            2056,
+            1030,
+            2052,
+            1030,
+            1038,
+            1030,
+            1032,
+            1030,
+            1028
+          ],
+          "LinkedItemsList15571990015806": [
+            67110151,
+            3598,
+            257,
+            3592,
+            257,
+            3588,
+            257,
+            2062,
+            67109891,
+            2056,
+            257,
+            2052,
+            257,
+            1038,
+            257,
+            1032,
+            394244,
+            1028
+          ],
+          "ActivityFeed15571990044978": [
+            150996231,
+            3598,
+            514,
+            3592,
+            514,
+            3588,
+            514,
+            2062,
+            67306500,
+            2056,
+            514,
+            2052,
+            514,
+            1038,
+            514,
+            1032,
+            656388,
+            1028
+          ]
+        },
+        "body": {
+          "id": "Database Migration Details_GridLayout1",
+          "type": "GridLayout",
+          "children": [
+            {
+              "id": "Form15571989942214",
+              "type": "Form",
+              "overlayDisabled": false,
+              "children": [],
+              "attributes": { "config": { "title": "" } }
+            },
+            {
+              "id": "LinkedItemsList15571990015806",
+              "type": "LinkedItemsList",
+              "overlayDisabled": false,
+              "children": [],
+              "attributes": { "config": { "excludeTypes": ["Notes"] } }
+            },
+            {
+              "id": "ActivityFeed15571990044978",
+              "type": "ActivityFeed",
+              "overlayDisabled": false,
+              "children": [],
+              "attributes": { "config": {} }
+            }
+          ],
+          "attributes": { "config": { "innerScroll": false } }
+        },
+        "attributes": { "itemId": 2, "pageId": 0, "itemType": 1 },
+        "jumbotronEnabled": true
+      },
+      "Database Migrations Files": {
+        "id": "Database Migrations Files",
+        "layouts": {},
+        "body": {
+          "id": "Horizontal Layout8723",
+          "type": "Horizontal Layout",
+          "attributes": { "config": { "children": [] } },
+          "children": [
+            {
+              "id": "File Browser8724",
+              "attributes": { "config": { "previewEnabled": true } },
+              "type": "File Browser",
+              "children": []
+            }
+          ]
+        },
+        "attributes": {
+          "pageId": 0,
+          "itemType": 0,
+          "linkItemId": 1,
+          "linkItemType": 2
+        }
+      },
+      "Database Migration": {
+        "layouts": {},
+        "body": {
+          "id": "Database Migrations_TabStrip1",
+          "type": "TabStrip",
+          "children": [],
+          "attributes": {
+            "config": {
+              "jumbotron": true,
+              "title": "View Database Migrations",
+              "tabs": [
+                {
+                  "title": "Details",
+                  "page": "Database Migration Details",
+                  "hidden": false,
+                  "attributes": {
+                    "itemId": "{itemId}",
+                    "itemType": "Database Migrations",
+                    "linkItemType": "Database Migrations",
+                    "linkItemId": "{itemId}"
+                  }
+                },
+                {
+                  "title": "Activity",
+                  "page": "Database Migration Activity",
+                  "hidden": false,
+                  "attributes": {
+                    "itemId": "{itemId}",
+                    "itemType": "Database Migrations",
+                    "linkItemType": "Database Migrations",
+                    "linkItemId": "{itemId}"
+                  }
+                },
+                {
+                  "title": "Files",
+                  "page": "Database Migrations Files",
+                  "hidden": false,
+                  "attributes": {
+                    "itemId": "{itemId}",
+                    "linkItemType": "Database Migrations",
+                    "linkItemId": "{itemId}",
+                    "itemType": "Database Migrations"
+                  }
+                },
+                {
+                  "title": "Tasks",
+                  "page": "Tasks",
+                  "hidden": false,
+                  "attributes": {
+                    "linkItemType": "Database Migrations",
+                    "linkItemId": "{itemId}",
+                    "itemType": "Tasks"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "id": "Database Migration",
+        "attributes": { "pageId": 0, "itemType": 1, "itemId": 2 }
+      },
+      "Database Migrations": {
+        "id": "Database Migrations",
+        "layouts": {
+          "DataTable1": [
+            3593,
+            3598,
+            2057,
+            2056,
+            1029,
+            1028,
+            257,
+            3592,
+            257,
+            3588,
+            257,
+            2062,
+            257,
+            2052,
+            257,
+            1038,
+            257,
+            1032
+          ],
+          "Horizontal Layout1": [
+            257,
+            3598,
+            257,
+            3592,
+            257,
+            3588,
+            257,
+            2062,
+            257,
+            2056,
+            257,
+            2052,
+            257,
+            1038,
+            257,
+            1032,
+            257,
+            1028
+          ]
+        },
+        "body": {
+          "id": "Horizontal Layout1",
+          "type": "Horizontal Layout",
+          "children": [
+            {
+              "id": "DataTable1",
+              "type": "DataTable",
+              "children": [],
+              "attributes": { "config": { "list": "Database Migrations" } }
+            }
+          ],
+          "attributes": {
+            "config": { "children": [{ "style": {} }, { "w": 1 }] }
+          }
+        },
+        "attributes": {
+          "pageId": 0,
+          "itemType": 0,
+          "linkItemId": 1,
+          "linkItemType": 2
+        }
+      },
+      "Database Migration Activity": {
+        "id": "Database Migration Activity",
+        "layouts": {},
+        "body": {
+          "type": "Horizontal Layout",
+          "id": "Horizontal Layout8725",
+          "attributes": { "config": { "children": [{ "w": 1 }] } },
+          "children": [
+            {
+              "id": "ActivityFeed8726",
+              "type": "ActivityFeed",
+              "attributes": { "config": {} },
+              "children": []
+            }
+          ]
+        },
+        "attributes": {
+          "pageId": 0,
+          "itemType": 0,
+          "linkItemId": 1,
+          "linkItemType": 2
+        }
+      },
+      "MY NEW FILE Details": {
+        "id": "MY NEW FILE Details",
+        "layouts": {
+          "MY NEW FILE Details_GridLayout1": [
+            257,
+            3598,
+            257,
+            3592,
+            257,
+            3588,
+            257,
+            2062,
+            257,
+            2056,
+            257,
+            2052,
+            257,
+            1038,
+            257,
+            1032,
+            257,
+            1028
+          ],
+          "EmbeddedForm15881871620793": [1285, 3598],
+          "Form15881871784505": [328452, 3598],
+          "TextField_asdasda_15881871900676": [
+            2049,
+            2062,
+            2049,
+            2056,
+            2049,
+            2052
+          ]
+        },
+        "body": {
+          "id": "MY NEW FILE Details_GridLayout1",
+          "type": "GridLayout",
+          "children": [
+            {
+              "id": "EmbeddedForm15881871620793",
+              "type": "EmbeddedForm",
+              "overlayDisabled": false,
+              "children": [],
+              "attributes": { "config": {} }
+            },
+            {
+              "id": "Form15881871784505",
+              "type": "Form",
+              "overlayDisabled": false,
+              "children": [
+                {
+                  "id": "TextField_asdasda_15881871900676",
+                  "type": "TextField",
+                  "overlayDisabled": false,
+                  "children": [],
+                  "attributes": { "config": {}, "field": "asdasda" }
+                }
+              ],
+              "attributes": { "config": { "title": "" } }
+            }
+          ],
+          "attributes": { "config": { "innerScroll": false } }
+        },
+        "attributes": { "itemId": 2, "pageId": 0, "itemType": 1 },
+        "jumbotronEnabled": true
+      },
+      "MY NEW FILEs Files": {
+        "id": "MY NEW FILEs Files",
+        "layouts": {},
+        "body": {
+          "id": "Horizontal Layout8730",
+          "type": "Horizontal Layout",
+          "attributes": { "config": { "children": [] } },
+          "children": [
+            {
+              "id": "File Browser8731",
+              "attributes": { "config": { "previewEnabled": true } },
+              "type": "File Browser",
+              "children": []
+            }
+          ]
+        },
+        "attributes": {
+          "pageId": 0,
+          "itemType": 0,
+          "linkItemId": 1,
+          "linkItemType": 2
+        }
+      },
+      "MY NEW FILE": {
+        "layouts": {},
+        "body": {
+          "id": "MY NEW FILEs_TabStrip1",
+          "type": "TabStrip",
+          "children": [],
+          "attributes": {
+            "config": {
+              "jumbotron": true,
+              "title": "View MY NEW FILEs",
+              "tabs": [
+                {
+                  "title": "Details",
+                  "page": "MY NEW FILE Details",
+                  "hidden": false,
+                  "attributes": {
+                    "itemId": "{itemId}",
+                    "itemType": "MY NEW FILEs",
+                    "linkItemType": "MY NEW FILEs",
+                    "linkItemId": "{itemId}"
+                  }
+                },
+                {
+                  "title": "Activity",
+                  "page": "MY NEW FILE Activity",
+                  "hidden": false,
+                  "attributes": {
+                    "itemId": "{itemId}",
+                    "itemType": "MY NEW FILEs",
+                    "linkItemType": "MY NEW FILEs",
+                    "linkItemId": "{itemId}"
+                  }
+                },
+                {
+                  "title": "Files",
+                  "page": "MY NEW FILEs Files",
+                  "hidden": false,
+                  "attributes": {
+                    "itemId": "{itemId}",
+                    "linkItemType": "MY NEW FILEs",
+                    "linkItemId": "{itemId}",
+                    "itemType": "MY NEW FILEs"
+                  }
+                },
+                {
+                  "title": "Tasks",
+                  "page": "Tasks",
+                  "hidden": false,
+                  "attributes": {
+                    "linkItemType": "MY NEW FILEs",
+                    "linkItemId": "{itemId}",
+                    "itemType": "Tasks"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "id": "MY NEW FILE",
+        "attributes": { "pageId": 0, "itemType": 1, "itemId": 2 },
+        "jumbotronEnabled": true
+      },
+      "MY NEW FILEs": {
+        "id": "MY NEW FILEs",
+        "layouts": {
+          "DataTable1": [
+            3593,
+            3598,
+            2057,
+            2056,
+            1029,
+            1028,
+            257,
+            3592,
+            257,
+            3588,
+            257,
+            2062,
+            257,
+            2052,
+            257,
+            1038,
+            257,
+            1032
+          ],
+          "Horizontal Layout1": [
+            257,
+            3598,
+            257,
+            3592,
+            257,
+            3588,
+            257,
+            2062,
+            257,
+            2056,
+            257,
+            2052,
+            257,
+            1038,
+            257,
+            1032,
+            257,
+            1028
+          ]
+        },
+        "body": {
+          "id": "Horizontal Layout1",
+          "type": "Horizontal Layout",
+          "children": [
+            {
+              "id": "DataTable1",
+              "type": "DataTable",
+              "children": [],
+              "attributes": { "config": { "list": "MY NEW FILEs" } }
+            }
+          ],
+          "attributes": {
+            "config": { "children": [{ "style": {} }, { "w": 1 }] }
+          }
+        },
+        "attributes": {
+          "pageId": 0,
+          "itemType": 0,
+          "linkItemId": 1,
+          "linkItemType": 2
+        }
+      },
+      "MY NEW FILE Activity": {
+        "id": "MY NEW FILE Activity",
+        "layouts": {},
+        "body": {
+          "type": "Horizontal Layout",
+          "id": "Horizontal Layout8732",
+          "attributes": { "config": { "children": [{ "w": 1 }] } },
+          "children": [
+            {
+              "id": "ActivityFeed8733",
+              "type": "ActivityFeed",
+              "attributes": { "config": {} },
+              "children": []
+            }
+          ]
+        },
+        "attributes": {
+          "pageId": 0,
+          "itemType": 0,
+          "linkItemId": 1,
+          "linkItemType": 2
+        }
+      },
+      "Test Form Details": {
+        "id": "Test Form Details",
+        "layouts": {
+          "Test Form Details_GridLayout1": [
+            257,
+            3598,
+            257,
+            3592,
+            257,
+            3588,
+            257,
+            2062,
+            257,
+            2056,
+            257,
+            2052,
+            257,
+            1038,
+            257,
+            1032,
+            257,
+            1028
+          ],
+          "Form15571989942214": [
+            1031,
+            3598,
+            1030,
+            3592,
+            1030,
+            3588,
+            1030,
+            2062,
+            1031,
+            2056,
+            1030,
+            2052,
+            1030,
+            1038,
+            1030,
+            1032,
+            1030,
+            1028
+          ],
+          "LinkedItemsList15571990015806": [
+            67110151,
+            3598,
+            257,
+            3592,
+            257,
+            3588,
+            257,
+            2062,
+            67109891,
+            2056,
+            257,
+            2052,
+            257,
+            1038,
+            257,
+            1032,
+            394244,
+            1028
+          ],
+          "ActivityFeed15571990044978": [
+            150996231,
+            3598,
+            514,
+            3592,
+            514,
+            3588,
+            514,
+            2062,
+            67306500,
+            2056,
+            514,
+            2052,
+            514,
+            1038,
+            514,
+            1032,
+            656388,
+            1028
+          ],
+          "TextField_title_15882436324672": [
+            2049,
+            2062,
+            2049,
+            2056,
+            2049,
+            2052
+          ],
+          "TextField_name_please_15882436324683": [
+            67585,
+            2062,
+            67585,
+            2056,
+            67585,
+            2052
+          ],
+          "DateField_date_made_15882436324694": [
+            133121,
+            2062,
+            133121,
+            2056,
+            133121,
+            2052
+          ],
+          "EmailField_email_title_15882436324695": [
+            198658,
+            2062,
+            198658,
+            2056,
+            198658,
+            2052
+          ],
+          "ChoiceField_choice_title_15882436324696": [
+            264193,
+            2062,
+            264193,
+            2056,
+            264193,
+            2052
+          ]
+        },
+        "body": {
+          "id": "Test Form Details_GridLayout1",
+          "type": "GridLayout",
+          "children": [
+            {
+              "id": "Form15571989942214",
+              "type": "Form",
+              "overlayDisabled": false,
+              "children": [
+                {
+                  "id": "TextField_title_15882436324672",
+                  "type": "TextField",
+                  "overlayDisabled": false,
+                  "children": [],
+                  "attributes": { "config": {}, "field": "title" }
+                },
+                {
+                  "id": "TextField_name_please_15882436324683",
+                  "type": "TextField",
+                  "overlayDisabled": false,
+                  "children": [],
+                  "attributes": { "config": {}, "field": "name_please" }
+                },
+                {
+                  "id": "DateField_date_made_15882436324694",
+                  "type": "DateField",
+                  "overlayDisabled": false,
+                  "children": [],
+                  "attributes": { "config": {}, "field": "date_made" }
+                },
+                {
+                  "id": "EmailField_email_title_15882436324695",
+                  "type": "EmailField",
+                  "overlayDisabled": false,
+                  "children": [],
+                  "attributes": { "config": {}, "field": "email_title" }
+                },
+                {
+                  "id": "ChoiceField_choice_title_15882436324696",
+                  "type": "ChoiceField",
+                  "overlayDisabled": false,
+                  "children": [],
+                  "attributes": { "config": {}, "field": "choice_title" }
+                }
+              ],
+              "attributes": { "config": { "title": "My form name" } }
+            },
+            {
+              "id": "LinkedItemsList15571990015806",
+              "type": "LinkedItemsList",
+              "overlayDisabled": false,
+              "children": [],
+              "attributes": { "config": { "excludeTypes": ["Notes"] } }
+            },
+            {
+              "id": "ActivityFeed15571990044978",
+              "type": "ActivityFeed",
+              "overlayDisabled": false,
+              "children": [],
+              "attributes": { "config": {} }
+            }
+          ],
+          "attributes": { "config": { "innerScroll": false } }
+        },
+        "attributes": { "itemId": 2, "pageId": 0, "itemType": 1 },
+        "jumbotronEnabled": true
+      },
+      "Test Forms Files": {
+        "id": "Test Forms Files",
+        "layouts": {},
+        "body": {
+          "id": "Horizontal Layout12009",
+          "type": "Horizontal Layout",
+          "attributes": { "config": { "children": [] } },
+          "children": [
+            {
+              "id": "File Browser12010",
+              "attributes": { "config": { "previewEnabled": true } },
+              "type": "File Browser",
+              "children": []
+            }
+          ]
+        },
+        "attributes": {
+          "pageId": 0,
+          "itemType": 0,
+          "linkItemId": 1,
+          "linkItemType": 2
+        }
+      },
+      "Test Form": {
+        "layouts": {},
+        "body": {
+          "id": "Test Forms_TabStrip1",
+          "type": "TabStrip",
+          "children": [],
+          "attributes": {
+            "config": {
+              "jumbotron": true,
+              "title": "View Test Forms",
+              "tabs": [
+                {
+                  "title": "Details",
+                  "page": "Test Form Details",
+                  "hidden": false,
+                  "attributes": {
+                    "itemId": "{itemId}",
+                    "itemType": "Test Forms",
+                    "linkItemType": "Test Forms",
+                    "linkItemId": "{itemId}"
+                  }
+                },
+                {
+                  "title": "Activity",
+                  "page": "Test Form Activity",
+                  "hidden": false,
+                  "attributes": {
+                    "itemId": "{itemId}",
+                    "itemType": "Test Forms",
+                    "linkItemType": "Test Forms",
+                    "linkItemId": "{itemId}"
+                  }
+                },
+                {
+                  "title": "Files",
+                  "page": "Test Forms Files",
+                  "hidden": false,
+                  "attributes": {
+                    "itemId": "{itemId}",
+                    "linkItemType": "Test Forms",
+                    "linkItemId": "{itemId}",
+                    "itemType": "Test Forms"
+                  }
+                },
+                {
+                  "title": "Tasks",
+                  "page": "Tasks",
+                  "hidden": false,
+                  "attributes": {
+                    "linkItemType": "Test Forms",
+                    "linkItemId": "{itemId}",
+                    "itemType": "Tasks"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "id": "Test Form",
+        "attributes": { "pageId": 0, "itemType": 1, "itemId": 2 },
+        "jumbotronEnabled": true
+      },
+      "Test Forms": {
+        "id": "Test Forms",
+        "layouts": {
+          "DataTable1": [
+            3593,
+            3598,
+            2057,
+            2056,
+            1029,
+            1028,
+            257,
+            3592,
+            257,
+            3588,
+            257,
+            2062,
+            257,
+            2052,
+            257,
+            1038,
+            257,
+            1032
+          ],
+          "Horizontal Layout1": [
+            257,
+            3598,
+            257,
+            3592,
+            257,
+            3588,
+            257,
+            2062,
+            257,
+            2056,
+            257,
+            2052,
+            257,
+            1038,
+            257,
+            1032,
+            257,
+            1028
+          ]
+        },
+        "body": {
+          "id": "Horizontal Layout1",
+          "type": "Horizontal Layout",
+          "children": [
+            {
+              "id": "DataTable1",
+              "type": "DataTable",
+              "children": [],
+              "attributes": { "config": { "list": "Test Forms" } }
+            }
+          ],
+          "attributes": {
+            "config": { "children": [{ "style": {} }, { "w": 1 }] }
+          }
+        },
+        "attributes": {
+          "pageId": 0,
+          "itemType": 0,
+          "linkItemId": 1,
+          "linkItemType": 2
+        }
+      },
+      "Test Form Activity": {
+        "id": "Test Form Activity",
+        "layouts": {},
+        "body": {
+          "type": "Horizontal Layout",
+          "id": "Horizontal Layout12011",
+          "attributes": { "config": { "children": [{ "w": 1 }] } },
+          "children": [
+            {
+              "id": "ActivityFeed12012",
+              "type": "ActivityFeed",
+              "attributes": { "config": {} },
+              "children": []
+            }
+          ]
+        },
+        "attributes": {
+          "pageId": 0,
+          "itemType": 0,
+          "linkItemId": 1,
+          "linkItemType": 2
+        }
+      },
+      "All Field Details": {
+        "id": "All Field Details",
+        "layouts": {
+          "All Field Details_GridLayout1": [
+            257,
+            3598,
+            257,
+            3592,
+            257,
+            3588,
+            257,
+            2062,
+            257,
+            2056,
+            257,
+            2052,
+            257,
+            1038,
+            257,
+            1032,
+            257,
+            1028
+          ],
+          "Form15571989942214": [
+            1031,
+            3598,
+            1030,
+            3592,
+            1030,
+            3588,
+            1030,
+            2062,
+            1031,
+            2056,
+            1030,
+            2052,
+            1030,
+            1038,
+            1030,
+            1032,
+            1030,
+            1028
+          ],
+          "TextField_text_field_15886581902322": [
+            2049,
+            2062,
+            2049,
+            2056,
+            2049,
+            2052
+          ],
+          "EmailField_email_field_15886581902333": [
+            67586,
+            2062,
+            67586,
+            2056,
+            67586,
+            2052
+          ],
+          "NoteField_multiple_lines_of_text_field_15886581902334": [
+            198658,
+            2062,
+            133122,
+            2056,
+            198658,
+            2052
+          ],
+          "DateField_date_and_time_field_15886581902335": [
+            329729,
+            2062,
+            198657,
+            2056,
+            329729,
+            2052
+          ],
+          "ChoiceField_choice_field_15886581902336": [
+            395265,
+            2062,
+            264193,
+            2056,
+            395265,
+            2052
+          ],
+          "LookupField_lookup_field_id_15886581902337": [
+            460801,
+            2062,
+            329729,
+            2056,
+            460801,
+            2052
+          ],
+          "BooleanField_boolean_field_15886581902338": [
+            526337,
+            2062,
+            395265,
+            2056,
+            526337,
+            2052
+          ],
+          "NumberField_number_field_15886581902349": [
+            591873,
+            2062,
+            460801,
+            2056,
+            591873,
+            2052
+          ],
+          "PercentageField_percentage_field_158865819023410": [
+            657409,
+            2062,
+            526337,
+            2056,
+            657409,
+            2052
+          ],
+          "CurrencyField_currency_field_158865819023411": [
+            722945,
+            2062,
+            591873,
+            2056,
+            722945,
+            2052
+          ],
+          "UserField_user_field_id_158865819023412": [
+            788481,
+            2062,
+            657409,
+            2056,
+            788481,
+            2052
+          ],
+          "NumberField_whole_number_field_158865821690113": [
+            854017,
+            2062,
+            854017,
+            2056,
+            854017,
+            2052
+          ]
+        },
+        "body": {
+          "id": "All Field Details_GridLayout1",
+          "type": "GridLayout",
+          "children": [
+            {
+              "id": "Form15571989942214",
+              "type": "Form",
+              "overlayDisabled": false,
+              "children": [
+                {
+                  "id": "TextField_text_field_15886581902322",
+                  "type": "TextField",
+                  "overlayDisabled": false,
+                  "children": [],
+                  "attributes": { "config": {}, "field": "text_field" }
+                },
+                {
+                  "id": "EmailField_email_field_15886581902333",
+                  "type": "EmailField",
+                  "overlayDisabled": false,
+                  "children": [],
+                  "attributes": { "config": {}, "field": "email_field" }
+                },
+                {
+                  "id": "NoteField_multiple_lines_of_text_field_15886581902334",
+                  "type": "NoteField",
+                  "overlayDisabled": false,
+                  "children": [],
+                  "attributes": {
+                    "config": {},
+                    "field": "multiple_lines_of_text_field"
+                  }
+                },
+                {
+                  "id": "DateField_date_and_time_field_15886581902335",
+                  "type": "DateField",
+                  "overlayDisabled": false,
+                  "children": [],
+                  "attributes": { "config": {}, "field": "date_and_time_field" }
+                },
+                {
+                  "id": "ChoiceField_choice_field_15886581902336",
+                  "type": "ChoiceField",
+                  "overlayDisabled": false,
+                  "children": [],
+                  "attributes": { "config": {}, "field": "choice_field" }
+                },
+                {
+                  "id": "LookupField_lookup_field_id_15886581902337",
+                  "type": "LookupField",
+                  "overlayDisabled": false,
+                  "children": [],
+                  "attributes": { "config": {}, "field": "lookup_field_id" }
+                },
+                {
+                  "id": "BooleanField_boolean_field_15886581902338",
+                  "type": "BooleanField",
+                  "overlayDisabled": false,
+                  "children": [],
+                  "attributes": { "config": {}, "field": "boolean_field" }
+                },
+                {
+                  "id": "NumberField_number_field_15886581902349",
+                  "type": "NumberField",
+                  "overlayDisabled": false,
+                  "children": [],
+                  "attributes": { "config": {}, "field": "number_field" }
+                },
+                {
+                  "id": "PercentageField_percentage_field_158865819023410",
+                  "type": "PercentageField",
+                  "overlayDisabled": false,
+                  "children": [],
+                  "attributes": { "config": {}, "field": "percentage_field" }
+                },
+                {
+                  "id": "CurrencyField_currency_field_158865819023411",
+                  "type": "CurrencyField",
+                  "overlayDisabled": false,
+                  "children": [],
+                  "attributes": { "config": {}, "field": "currency_field" }
+                },
+                {
+                  "id": "UserField_user_field_id_158865819023412",
+                  "type": "UserField",
+                  "overlayDisabled": false,
+                  "children": [],
+                  "attributes": { "config": {}, "field": "user_field_id" }
+                },
+                {
+                  "id": "NumberField_whole_number_field_158865821690113",
+                  "type": "NumberField",
+                  "overlayDisabled": false,
+                  "children": [],
+                  "attributes": { "config": {}, "field": "whole_number_field" }
+                }
+              ],
+              "attributes": {
+                "config": { "title": "Add fields Title for form" }
+              }
+            }
+          ],
+          "attributes": { "config": { "innerScroll": false } }
+        },
+        "attributes": { "itemId": 2, "pageId": 0, "itemType": 1 },
+        "jumbotronEnabled": true
+      },
+      "All Fields Files": {
+        "id": "All Fields Files",
+        "layouts": {},
+        "body": {
+          "id": "Horizontal Layout21863",
+          "type": "Horizontal Layout",
+          "attributes": { "config": { "children": [] } },
+          "children": [
+            {
+              "id": "File Browser21864",
+              "attributes": { "config": { "previewEnabled": true } },
+              "type": "File Browser",
+              "children": []
+            }
+          ]
+        },
+        "attributes": {
+          "pageId": 0,
+          "itemType": 0,
+          "linkItemId": 1,
+          "linkItemType": 2
+        }
+      },
+      "All Field": {
+        "layouts": {},
+        "body": {
+          "id": "All Fields_TabStrip1",
+          "type": "TabStrip",
+          "children": [],
+          "attributes": {
+            "config": {
+              "jumbotron": true,
+              "title": "View All Fields",
+              "tabs": [
+                {
+                  "title": "Details",
+                  "page": "All Field Details",
+                  "hidden": false,
+                  "attributes": {
+                    "itemId": "{itemId}",
+                    "itemType": "All Fields",
+                    "linkItemType": "All Fields",
+                    "linkItemId": "{itemId}"
+                  }
+                },
+                {
+                  "title": "Activity",
+                  "page": "All Field Activity",
+                  "hidden": false,
+                  "attributes": {
+                    "itemId": "{itemId}",
+                    "itemType": "All Fields",
+                    "linkItemType": "All Fields",
+                    "linkItemId": "{itemId}"
+                  }
+                },
+                {
+                  "title": "Files",
+                  "page": "All Fields Files",
+                  "hidden": false,
+                  "attributes": {
+                    "itemId": "{itemId}",
+                    "linkItemType": "All Fields",
+                    "linkItemId": "{itemId}",
+                    "itemType": "All Fields"
+                  }
+                },
+                {
+                  "title": "Tasks",
+                  "page": "Tasks",
+                  "hidden": false,
+                  "attributes": {
+                    "linkItemType": "All Fields",
+                    "linkItemId": "{itemId}",
+                    "itemType": "Tasks"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "id": "All Field",
+        "attributes": { "pageId": 0, "itemType": 1, "itemId": 2 },
+        "jumbotronEnabled": true
+      },
+      "All Fields": {
+        "id": "All Fields",
+        "layouts": {
+          "DataTable1": [
+            3593,
+            3598,
+            2057,
+            2056,
+            1029,
+            1028,
+            257,
+            3592,
+            257,
+            3588,
+            257,
+            2062,
+            257,
+            2052,
+            257,
+            1038,
+            257,
+            1032
+          ],
+          "Horizontal Layout1": [
+            257,
+            3598,
+            257,
+            3592,
+            257,
+            3588,
+            257,
+            2062,
+            257,
+            2056,
+            257,
+            2052,
+            257,
+            1038,
+            257,
+            1032,
+            257,
+            1028
+          ]
+        },
+        "body": {
+          "id": "Horizontal Layout1",
+          "type": "Horizontal Layout",
+          "children": [
+            {
+              "id": "DataTable1",
+              "type": "DataTable",
+              "children": [],
+              "attributes": { "config": { "list": "All Fields" } }
+            }
+          ],
+          "attributes": {
+            "config": { "children": [{ "style": {} }, { "w": 1 }] }
+          }
+        },
+        "attributes": {
+          "pageId": 0,
+          "itemType": 0,
+          "linkItemId": 1,
+          "linkItemType": 2
+        }
+      },
+      "All Field Activity": {
+        "id": "All Field Activity",
+        "layouts": {},
+        "body": {
+          "type": "Horizontal Layout",
+          "id": "Horizontal Layout21865",
+          "attributes": { "config": { "children": [{ "w": 1 }] } },
+          "children": [
+            {
+              "id": "ActivityFeed21866",
+              "type": "ActivityFeed",
+              "attributes": { "config": {} },
+              "children": []
+            }
+          ]
+        },
+        "attributes": {
+          "pageId": 0,
+          "itemType": 0,
+          "linkItemId": 1,
+          "linkItemType": 2
+        }
+      }
+    }
+  },
+  "Menus": [
+    {
+      "id": "Explorer Sidebar",
+      "Items": [
+        {
+          "Text": "Tasks",
+          "Icon": "TaskSolid",
+          "Arguments": { "page": "Tasks" },
+          "Items": [],
+          "Action": "Open in Flyout"
+        },
+        {
+          "Text": "Watch Lists",
+          "Icon": "RedEye",
+          "Arguments": { "page": "Watch Lists" },
+          "Items": [],
+          "Action": "Open in Flyout"
+        },
+        {
+          "Text": "Settings",
+          "Arguments": {},
+          "Items": [
+            {
+              "Text": "Users & Groups",
+              "Icon": "Group",
+              "Arguments": { "page": "Principals" },
+              "Items": [],
+              "Action": "Open in Flyout"
+            }
+          ]
+        },
+        {
+          "Text": "Workflow",
+          "Arguments": {},
+          "Items": [
+            {
+              "Text": "Open Compoza",
+              "Icon": "Flow",
+              "Arguments": { "href": "compoza", "subUrl": "blueprint" },
+              "Items": [],
+              "Action": "Open App"
+            },
+            {
+              "Text": "Process Diagrams",
+              "Icon": "Flow",
+              "Arguments": { "page": "Process Diagrams" },
+              "Items": [],
+              "Action": "Open in Flyout"
+            },
+            {
+              "Text": "Process Runs",
+              "Icon": "Processing",
+              "Arguments": { "page": "Process Runs" },
+              "Items": [],
+              "Action": "Open in Flyout"
+            },
+            {
+              "Text": "Process Artifacts",
+              "Icon": "Checkbox",
+              "Arguments": { "page": "Process Artifacts" },
+              "Items": [],
+              "Action": "Open in Flyout"
+            }
+          ]
+        },
+        {
+          "Text": "New Entities",
+          "Icon": "Table",
+          "Arguments": { "page": "New Entities" },
+          "Items": [],
+          "Action": "Open in Flyout"
+        },
+        {
+          "Text": "MY NEW FILEs",
+          "Icon": "Table",
+          "Arguments": { "page": "MY NEW FILEs" },
+          "Items": [],
+          "Action": "Open in Flyout"
+        },
+        {
+          "Text": "Test Forms",
+          "Icon": "Table",
+          "Arguments": { "page": "Test Forms" },
+          "Items": [],
+          "Action": "Open in Flyout"
+        },
+        {
+          "Text": "All Fields",
+          "Icon": "Table",
+          "Arguments": { "page": "All Fields" },
+          "Items": [],
+          "Action": "Open in Flyout"
+        }
+      ]
+    }
+  ],
+  "DataSources": {
+    "principal": [
+      {
+        "Title": "All",
+        "Columns": [
+          { "ColumnName": "oid", "Order": 0, "Title": "Object ID" },
+          { "ColumnName": "display_name", "Order": 1, "Title": "Display Name" },
+          { "ColumnName": "email", "Order": 2, "Title": "E-Mail Address" },
+          { "ColumnName": "upn", "Order": 3, "Title": "User Principal Name" },
+          { "ColumnName": "department", "Order": 4, "Title": "Department" },
+          { "ColumnName": "given_names", "Order": 5, "Title": "Given Names" },
+          { "ColumnName": "surname", "Order": 6, "Title": "Surname" },
+          { "ColumnName": "type", "Order": 7, "Title": "Principal Type" },
+          { "ColumnName": "status", "Order": 8, "Title": "Status" }
+        ],
+        "Editable": true,
+        "Deletable": false,
+        "SortBy": "id",
+        "SortDirection": "desc"
+      }
+    ],
+    "note": [
+      {
+        "Title": "All",
+        "Columns": [
+          { "ColumnName": "title", "Order": 0, "Title": "Title" },
+          { "ColumnName": "type", "Order": 1, "Title": "Type" }
+        ],
+        "Editable": true,
+        "Deletable": false,
+        "SortBy": "id",
+        "SortDirection": "desc"
+      }
+    ],
+    "task": [
+      {
+        "Title": "All",
+        "Columns": [
+          { "ColumnName": "title", "Order": 0, "Title": "Title" },
+          { "ColumnName": "start_date", "Order": 1, "Title": "Start Date" },
+          { "ColumnName": "due_date", "Order": 2, "Title": "Due Date" },
+          {
+            "ColumnName": "assigned_to_id",
+            "Order": 3,
+            "Title": "Assigned To"
+          },
+          { "ColumnName": "status", "Order": 4, "Title": "Status" }
+        ],
+        "Editable": true,
+        "Deletable": false,
+        "SortBy": "id",
+        "SortDirection": "desc"
+      }
+    ],
+    "dependency": [
+      {
+        "Title": "All",
+        "Columns": [
+          { "ColumnName": "source_id", "Order": 0, "Title": "Source" },
+          { "ColumnName": "target_id", "Order": 1, "Title": "Target" },
+          { "ColumnName": "gap", "Order": 2, "Title": "Gap" },
+          { "ColumnName": "type", "Order": 3, "Title": "Type" }
+        ],
+        "Editable": true,
+        "Deletable": false,
+        "SortBy": "id",
+        "SortDirection": "desc"
+      }
+    ],
+    "process_diagram": [
+      {
+        "Title": "Signal Events",
+        "Columns": [
+          { "ColumnName": "id" },
+          { "ColumnName": "element_id" },
+          { "ColumnName": "list" },
+          { "ColumnName": "lifecycle" },
+          { "ColumnName": "conditions" }
+        ],
+        "FilterExpression": null,
+        "Editable": false,
+        "Deletable": false,
+        "Transient": true
+      },
+      {
+        "Title": "All",
+        "Columns": [
+          { "ColumnName": "author_id" },
+          { "ColumnName": "created" },
+          { "ColumnName": "editor_id" },
+          { "ColumnName": "modified" },
+          { "ColumnName": "parent_id" },
+          { "ColumnName": "sys_external_id" },
+          { "ColumnName": "entity_type" },
+          { "ColumnName": "entity_id" },
+          { "ColumnName": "step_id" },
+          { "ColumnName": "process_diagram_id" },
+          { "ColumnName": "process_run_id" },
+          { "ColumnName": "process_element_id" }
+        ],
+        "FilterExpression": null,
+        "SortBy": "id",
+        "SortDirection": "desc",
+        "Editable": true,
+        "Deletable": false
+      }
+    ],
+    "process_run": [
+      {
+        "Title": "All",
+        "Columns": [
+          { "ColumnName": "title", "Order": 0, "Title": "Title" },
+          {
+            "ColumnName": "process_diagram_id",
+            "Order": 1,
+            "Title": "Process Diagram"
+          },
+          { "ColumnName": "is_complete", "Order": 2, "Title": "Is Complete" },
+          {
+            "ColumnName": "erroring_element",
+            "Order": 3,
+            "Title": "Erroring Element"
+          },
+          {
+            "ColumnName": "latest_error_message",
+            "Order": 4,
+            "Title": "Error Message"
+          },
+          { "ColumnName": "diagram_data", "Order": 5, "Title": "Diagram Data" },
+          {
+            "ColumnName": "current_element",
+            "Order": 6,
+            "Title": "Current Element"
+          }
+        ],
+        "Editable": true,
+        "Deletable": false,
+        "SortBy": "id",
+        "SortDirection": "desc"
+      }
+    ],
+    "process_artifact": [
+      {
+        "Title": "All",
+        "Columns": [
+          { "ColumnName": "entity_type", "Order": 0, "Title": "Entity Type" },
+          { "ColumnName": "entity_id", "Order": 1, "Title": "Entity" },
+          { "ColumnName": "step_id", "Order": 2, "Title": "Step" },
+          {
+            "ColumnName": "process_diagram_id",
+            "Order": 3,
+            "Title": "Process Diagram"
+          },
+          {
+            "ColumnName": "process_run_id",
+            "Order": 4,
+            "Title": "Process Run"
+          },
+          {
+            "ColumnName": "process_element_id",
+            "Order": 5,
+            "Title": "Process Element"
+          }
+        ],
+        "Editable": true,
+        "Deletable": false,
+        "SortBy": "id",
+        "SortDirection": "desc"
+      }
+    ],
+    "sys_database_migration": [
+      {
+        "Title": "All",
+        "Columns": [
+          { "ColumnName": "created" },
+          { "ColumnName": "author_id", "MaxWidth": 303 },
+          { "ColumnName": "title", "MaxWidth": 556 },
+          { "ColumnName": "status", "MaxWidth": 214 }
+        ],
+        "FilterExpression": null,
+        "SortBy": "id",
+        "SortDirection": "desc",
+        "Editable": true,
+        "Deletable": true,
+        "IsVisible": true
+      }
+    ],
+    "test_form": [
+      {
+        "Title": "All",
+        "Columns": [
+          { "ColumnName": "title", "Order": 0, "Title": "title" },
+          { "ColumnName": "name_please", "Order": 1, "Title": "Name please" },
+          { "ColumnName": "date_made", "Order": 2, "Title": "Date Made" },
+          { "ColumnName": "email_title", "Order": 3, "Title": "Email Title" },
+          { "ColumnName": "choice_title", "Order": 4, "Title": "Choice Title" }
+        ],
+        "Editable": true,
+        "Deletable": false,
+        "SortBy": "id",
+        "SortDirection": "desc"
+      }
+    ],
+    "all_field": [
+      {
+        "Title": "All",
+        "Columns": [
+          { "ColumnName": "text_field", "Order": 0, "Title": "Text Field" },
+          { "ColumnName": "email_field", "Order": 1, "Title": "Email Field" },
+          {
+            "ColumnName": "date_and_time_field",
+            "Order": 2,
+            "Title": "Date And Time Field"
+          },
+          { "ColumnName": "choice_field", "Order": 3, "Title": "Choice Field" },
+          {
+            "ColumnName": "lookup_field_id",
+            "Order": 4,
+            "Title": "Lookup Field"
+          },
+          {
+            "ColumnName": "boolean_field",
+            "Order": 5,
+            "Title": "Boolean Field"
+          },
+          { "ColumnName": "number_field", "Order": 6, "Title": "Number Field" },
+          {
+            "ColumnName": "percentage_field",
+            "Order": 7,
+            "Title": "Percentage Field"
+          },
+          {
+            "ColumnName": "currency_field",
+            "Order": 8,
+            "Title": "Currency Field"
+          },
+          { "ColumnName": "user_field_id", "Order": 9, "Title": "User Field" },
+          {
+            "ColumnName": "whole_number_field",
+            "Order": 10,
+            "Title": "Whole Number Field"
+          }
+        ],
+        "Editable": true,
+        "Deletable": false,
+        "SortBy": "id",
+        "SortDirection": "desc"
+      }
+    ],
+    "my_new_file": [
+      {
+        "Title": "All",
+        "Columns": [
+          { "ColumnName": "asdasda", "Order": 0, "Title": "asdasda" }
+        ],
+        "Editable": true,
+        "Deletable": false,
+        "SortBy": "id",
+        "SortDirection": "desc"
+      }
+    ],
+    "universal_link": [
+      {
+        "Title": "All",
+        "Columns": [
+          { "ColumnName": "principal_id", "Order": 0, "Title": "Principals" },
+          { "ColumnName": "note_id", "Order": 1, "Title": "Notes" },
+          { "ColumnName": "task_id", "Order": 2, "Title": "Tasks" },
+          {
+            "ColumnName": "notification_id",
+            "Order": 3,
+            "Title": "Notifications"
+          },
+          {
+            "ColumnName": "process_diagram_id",
+            "Order": 4,
+            "Title": "Process Diagrams"
+          },
+          {
+            "ColumnName": "process_run_id",
+            "Order": 5,
+            "Title": "Process Runs"
+          },
+          {
+            "ColumnName": "process_artifact_id",
+            "Order": 6,
+            "Title": "Process Artifacts"
+          },
+          {
+            "ColumnName": "sys_database_migration_id",
+            "Order": 7,
+            "Title": "Database Migrations"
+          },
+          { "ColumnName": "test_form_id", "Order": 8, "Title": "Test Forms" },
+          { "ColumnName": "all_field_id", "Order": 9, "Title": "All Fields" },
+          {
+            "ColumnName": "my_new_file_id",
+            "Order": 10,
+            "Title": "MY NEW FILEs"
+          },
+          {
+            "ColumnName": "column_name",
+            "Order": 11,
+            "Title": "Lookup Column Name"
+          },
+          {
+            "ColumnName": "entity_type_id",
+            "Order": 12,
+            "Title": "Entity Type ID"
+          },
+          {
+            "ColumnName": "self_reference_id",
+            "Order": 13,
+            "Title": "Self Reference ID"
+          },
+          { "ColumnName": "choice_value", "Order": 14, "Title": "Choice Value" }
+        ],
+        "Editable": true,
+        "Deletable": false,
+        "SortBy": "id",
+        "SortDirection": "desc"
+      }
+    ]
+  },
+  "PrimaryGroup": {
+    "GroupId": "b2b9fd8c-2c03-4d14-904f-e0ccc72d9dbb",
+    "DriveId": "b!sIYU-08zEUiHC_RkS9kZVPXZ3ppCqd9JujVhKnpDJzmfnNM9TZbvS6puhgjF6e8e",
+    "DriveItemId": "01C35B3LF6Y2GOVW7725BZO354PWSELRRZ"
+  },
+  "AdditionalGroups": [{ "GroupId": "b2b9fd8c-2c03-4d14-904f-e0ccc72d9dbb" }],
+  "Drives": {
+    "Principals": {
+      "DriveId": "b!sIYU-08zEUiHC_RkS9kZVPXZ3ppCqd9JujVhKnpDJzmfnNM9TZbvS6puhgjF6e8e",
+      "DriveItemId": "01C35B3LEUXAEJCNHF4FG3S2LJRLHEF5MW"
+    },
+    "Notes": {
+      "DriveId": "b!sIYU-08zEUiHC_RkS9kZVPXZ3ppCqd9JujVhKnpDJzmfnNM9TZbvS6puhgjF6e8e",
+      "DriveItemId": "01C35B3LHOAHIY6WE7FNHJY2E2CJKPBITL"
+    },
+    "Tasks": {
+      "DriveId": "b!sIYU-08zEUiHC_RkS9kZVPXZ3ppCqd9JujVhKnpDJzmfnNM9TZbvS6puhgjF6e8e",
+      "DriveItemId": "01C35B3LCBYG7T52JSFNFIXBYCIEXITB5G"
+    },
+    "Policies": {
+      "DriveId": "b!sIYU-08zEUiHC_RkS9kZVPXZ3ppCqd9JujVhKnpDJzmfnNM9TZbvS6puhgjF6e8e",
+      "DriveItemId": "01C35B3LDTIE4EJKZPLJCKXSKGWYTEMEJD"
+    },
+    "Process Diagrams": {
+      "DriveId": "b!sIYU-08zEUiHC_RkS9kZVPXZ3ppCqd9JujVhKnpDJzmfnNM9TZbvS6puhgjF6e8e",
+      "DriveItemId": "01C35B3LGNS34VV6T6B5GZTTERGBMB2BDC"
+    },
+    "Process Associations": {
+      "DriveId": "b!sIYU-08zEUiHC_RkS9kZVPXZ3ppCqd9JujVhKnpDJzmfnNM9TZbvS6puhgjF6e8e",
+      "DriveItemId": "01C35B3LA5SCMQVHGBNFHLCK2EDLELFTNP"
+    },
+    "Process Artifacts": {
+      "DriveId": "b!sIYU-08zEUiHC_RkS9kZVPXZ3ppCqd9JujVhKnpDJzmfnNM9TZbvS6puhgjF6e8e",
+      "DriveItemId": "01C35B3LAC4RZBZ6RLCZAKZK3WGIIGU2YF"
+    }
+  },
+  "Integrations": [],
+  "Forms": {
+    "transport": null,
+    "snapshots": [],
+    "channel": null,
+    "isLoading": false,
+    "isLoadingDebounce": false,
+    "isNew": true,
+    "isNotFound": false,
+    "isFetched": false,
+    "isUnauthorized": false,
+    "isSaving": false,
+    "browserNotificationPermission": "denied",
+    "items": [],
+    "quotes": []
+  },
+  "Access": {},
+  "Permissions": {
+    "Uni Assignments": {
+      "DefaultPermissions": [{ "principal_id": 2, "mode_flags": 7 }],
+      "PlaceholderPermissions": { "Author": 7 }
+    },
+    "UNI_Assignments": {
+      "DefaultPermissions": [{ "principal_id": 2, "mode_flags": 7 }],
+      "PlaceholderPermissions": { "Author": 7 }
+    },
+    "UniAssignments": {
+      "DefaultPermissions": [{ "principal_id": 2, "mode_flags": 7 }],
+      "PlaceholderPermissions": { "Author": 7 }
+    },
+    "MY NEW FILEs": {
+      "DefaultPermissions": [{ "principal_id": 2, "mode_flags": 7 }],
+      "PlaceholderPermissions": { "Author": 7 }
+    },
+    "Test Forms": {
+      "DefaultPermissions": [{ "principal_id": 2, "mode_flags": 7 }],
+      "PlaceholderPermissions": { "Author": 7 }
+    },
+    "All Fields": {
+      "DefaultPermissions": [{ "principal_id": 2, "mode_flags": 7 }],
+      "PlaceholderPermissions": { "Author": 7 }
+    }
+  },
+  "InheritLinks": { "MY NEW FILEs": [], "Test Forms": [], "All Fields": [] },
+  "Operations": [
+    {
+      "name": "Assign Default Permissions",
+      "maintainer": "Tyler Watson <tyler@muze.com.au>",
+      "description": "Assigns the default permissions on an item"
+    },
+    {
+      "name": "Create Attachments on item create",
+      "maintainer": "Tyler Watson <tyler@muze.com.au>",
+      "description": "Creates attachments on new items"
+    },
+    {
+      "name": "Reassign Default Permissions",
+      "maintainer": "DJ Diaz <dj@rapidplatform.com.au>",
+      "description": "Re-assigns the permissions for an item on update"
+    },
+    {
+      "name": "Parse Embedded Form",
+      "maintainer": "Hayden Jackson <hayden@muze.com.au>",
+      "description": "\n    Takes a task save/update object that has an embedded form and attempts\n    to save any form data against the actual form list item\n  ",
+      "parameters": {}
+    },
+    {
+      "name": "Process Linked Items",
+      "maintainer": "Tyler Watson <tyler@simpli.com.au>",
+      "description": "\n        Processes a linked items array which may be present on an incoming model.\n\n        The model must have a LinkedItems array directly underneath the object for\n        this operation to work.\n    ",
+      "parameters": {
+        "replaceLinkedItems": {
+          "description": "Specifies whether to replace all existing linked items with the links specified below",
+          "defaultValue": false
+        }
+      }
+    },
+    {
+      "name": "Notify Assigned on Creation",
+      "maintainer": "Tyler Watson <tyler@muze.com.au>",
+      "description": "Notifies the assigned user of a task that a task has been assigned."
+    },
+    {
+      "name": "Resend Notification for Assigned",
+      "maintainer": "DJ Diaz <dj@muze.com.au>",
+      "description": "Resends notification when assigned user changes"
+    },
+    {
+      "name": "Entity Folder Sync",
+      "maintainer": "Tyler Watson <tyler@tw.id.au>",
+      "description": "\n    Keeps the entity folder in sync with the title of a list item.\n  "
+    },
+    {
+      "name": "Process Dependencies",
+      "maintainer": "Tyler Watson <tyler@rapidplatform.com.au>",
+      "description": "\n    Processes the `Dependencies` collection on task objects.\n  "
+    }
+  ]
+}
